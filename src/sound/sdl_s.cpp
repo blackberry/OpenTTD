@@ -21,6 +21,13 @@
 /** Factory for the SDL sound driver. */
 static FSoundDriver_SDL iFSoundDriver_SDL;
 
+#ifdef __PLAYBOOK__
+void ForceInitSoundDriver_SDL()
+{
+	fprintf(stderr, "Initializing SDL sound driver\n");
+}
+#endif
+
 /**
  * Callback that fills the sound buffer.
  * @param userdata Ignored.

@@ -22,7 +22,7 @@
 #include <Path.h>
 #include <storage/FindDirectory.h>
 #else
-#if defined(OPENBSD) || defined(DOS)
+#if defined(OPENBSD) || defined(DOS) || defined(__QNXNTO__)
 #include <unistd.h>
 #endif
 #include <pwd.h>
@@ -532,8 +532,8 @@ static void TarAddLink(const std::string &srcParam, const std::string &destParam
 	std::string src = srcParam;
 	std::string dest = destParam;
 	/* Tar internals assume lowercase */
-	std::transform(src.begin(), src.end(), src.begin(), tolower);
-	std::transform(dest.begin(), dest.end(), dest.begin(), tolower);
+	std::transform(src.begin(), src.end(), src.begin(), std::tolower);
+	std::transform(dest.begin(), dest.end(), dest.begin(), std::tolower);
 
 	TarFileList::iterator dest_file = _tar_filelist.find(dest);
 	if (dest_file != _tar_filelist.end()) {
@@ -949,7 +949,11 @@ bool DoScanWorkingDirectory()
 void DetermineBasePaths(const char *exe)
 {
 	char tmp[MAX_PATH];
-#if defined(__MORPHOS__) || defined(__AMIGA__) || defined(DOS) || defined(OS2) || !defined(WITH_PERSONAL_DIR)
+#if defined(__PLAYBOOK__)
+	snprintf(tmp, MAX_PATH, "." PATHSEP "data");
+	AppendPathSeparator(tmp, MAX_PATH);
+	_searchpaths[SP_PERSONAL_DIR] = strdup(tmp);
+#elif defined(__MORPHOS__) || defined(__AMIGA__) || defined(DOS) || defined(OS2) || !defined(WITH_PERSONAL_DIR)
 	_searchpaths[SP_PERSONAL_DIR] = NULL;
 #else
 #ifdef __HAIKU__
@@ -1008,6 +1012,10 @@ void DetermineBasePaths(const char *exe)
 #if defined(__MORPHOS__) || defined(__AMIGA__) || defined(DOS) || defined(OS2)
 	_searchpaths[SP_INSTALLATION_DIR] = NULL;
 #else
+
+#if defined(__PLAYBOOK__)
+#define GLOBAL_DATA_DIR "app/native"
+#endif
 	snprintf(tmp, MAX_PATH, "%s", GLOBAL_DATA_DIR);
 	AppendPathSeparator(tmp, MAX_PATH);
 	_searchpaths[SP_INSTALLATION_DIR] = strdup(tmp);
@@ -1078,7 +1086,7 @@ void DeterminePaths(const char *exe)
 	_hotkeys_file = str_fmt("%shotkeys.cfg",  _personal_dir);
 
 	/* Make the necessary folders */
-#if !defined(__MORPHOS__) && !defined(__AMIGA__) && defined(WITH_PERSONAL_DIR)
+#if defined(__PLAYBOOK__) || (!defined(__MORPHOS__) && !defined(__AMIGA__) && defined(WITH_PERSONAL_DIR))
 	FioCreateDirectory(_personal_dir);
 #endif
 

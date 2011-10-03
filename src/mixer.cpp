@@ -33,6 +33,10 @@ struct MixerChannel {
 };
 
 static MixerChannel _channels[8];
+#if defined(__PLAYBOOK__)
+static MixerChannel _musicChannel;
+void (*musicCallback)(int16*,uint);
+#endif
 static uint32 _play_rate = 11025;
 static uint32 _max_size = UINT_MAX;
 
@@ -152,6 +156,11 @@ void MxMixSamples(void *buffer, uint samples)
 			if (mc->samples_left == 0) MxCloseChannel(mc);
 		}
 	}
+#if defined(__PLAYBOOK__)
+	if (_musicChannel.active) {
+		(*musicCallback)((int16*)buffer, samples);
+	}
+#endif
 }
 
 MixerChannel *MxAllocateChannel()
@@ -166,6 +175,35 @@ MixerChannel *MxAllocateChannel()
 	}
 	return NULL;
 }
+
+#if defined(__PLAYBOOK__)
+MixerChannel *MxAllocateMusicChannel(void (*callback)(int16*,uint))
+{
+	musicCallback = callback;
+	if (!_musicChannel.active) {
+		return &_musicChannel;
+	}
+	return NULL;
+}
+
+void MxDeactivateMusic()
+{
+	_musicChannel.active = false;
+}
+
+void MxMixMusic(int16* buffer, uint samples, const int16 *music)
+{
+	int volume_left = _musicChannel.volume_left;
+	int volume_right = _musicChannel.volume_right;
+	do {
+		buffer[0] = Clamp(buffer[0] + (*music * volume_left >> 16), -MAX_VOLUME, MAX_VOLUME);
+		music++;
+		buffer[1] = Clamp(buffer[0] + (*music * volume_right >> 16), -MAX_VOLUME, MAX_VOLUME);
+		music++;
+		buffer += 2;
+	} while (--samples > 0);
+}
+#endif
 
 void MxSetChannelRawSrc(MixerChannel *mc, int8 *mem, size_t size, uint rate, bool is16bit)
 {

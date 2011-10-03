@@ -293,7 +293,7 @@ struct NewGRFInspectWindow : Window {
 	{
 		if (widget != NIW_MAINPANEL) return;
 
-		resize->height = max(11, FONT_HEIGHT_NORMAL + 1);
+		resize->height = ::max(11, FONT_HEIGHT_NORMAL + 1);
 		resize->width  = 1;
 
 		size->height = 5 * resize->height + TOP_OFFSET + BOTTOM_OFFSET;
@@ -641,7 +641,7 @@ struct SpriteAlignerWindow : Window {
 	{
 		if (widget != SAW_LIST) return;
 
-		resize->height = max(11, FONT_HEIGHT_NORMAL + 1);
+		resize->height = ::max(11, FONT_HEIGHT_NORMAL + 1);
 		resize->width  = 1;
 
 		/* Resize to about 200 pixels (for the preview) */
@@ -676,7 +676,7 @@ struct SpriteAlignerWindow : Window {
 				int step_size = nwid->resize_y;
 
 				SmallVector<SpriteID, 256> &list = _newgrf_debug_sprite_picker.sprites;
-				int max = min<int>(this->vscroll->GetPosition() + this->vscroll->GetCapacity(), list.Length());
+				int max = ::min<int>(this->vscroll->GetPosition() + this->vscroll->GetCapacity(), list.Length());
 
 				int y = r.top + WD_FRAMERECT_TOP;
 				for (int i = this->vscroll->GetPosition(); i < max; i++) {

@@ -824,7 +824,7 @@ class SmallMapWindow : public Window {
 			if (min_xy == 1 && (xc == 0 || yc == 0)) {
 				if (this->zoom == 1) continue; // The tile area is empty, don't draw anything.
 
-				ta = TileArea(TileXY(max(min_xy, xc), max(min_xy, yc)), this->zoom - (xc == 0), this->zoom - (yc == 0));
+				ta = TileArea(TileXY(::max(min_xy, xc), ::max(min_xy, yc)), this->zoom - (xc == 0), this->zoom - (yc == 0));
 			} else {
 				ta = TileArea(TileXY(xc, yc), this->zoom, this->zoom);
 			}
@@ -832,8 +832,8 @@ class SmallMapWindow : public Window {
 
 			uint32 val = this->GetTileColours(ta);
 			uint8 *val8 = (uint8 *)&val;
-			int idx = max(0, -start_pos);
-			for (int pos = max(0, start_pos); pos < end_pos; pos++) {
+			int idx = ::max(0, -start_pos);
+			for (int pos = ::max(0, start_pos); pos < end_pos; pos++) {
 				blitter->SetPixel(dst, idx, 0, val8[idx]);
 				idx++;
 			}
@@ -1104,7 +1104,7 @@ public:
 	 */
 	uint GetLegendHeight(uint num_columns) const
 	{
-		uint num_rows = max(this->min_number_of_fixed_rows, CeilDiv(max(_smallmap_company_count, _smallmap_industry_count), num_columns));
+		uint num_rows = ::max(this->min_number_of_fixed_rows, CeilDiv(::max(_smallmap_company_count, _smallmap_industry_count), num_columns));
 		return WD_FRAMERECT_TOP + WD_FRAMERECT_BOTTOM + num_rows * FONT_HEIGHT_SMALL;
 	}
 
@@ -1147,17 +1147,17 @@ public:
 					}
 				} else {
 					if (tbl->col_break) {
-						this->min_number_of_fixed_rows = max(this->min_number_of_fixed_rows, height);
+						this->min_number_of_fixed_rows = ::max(this->min_number_of_fixed_rows, height);
 						height = 0;
 						num_columns++;
 					}
 					height++;
 					str = tbl->legend;
 				}
-				min_width = max(GetStringBoundingBox(str).width, min_width);
+				min_width = ::max(GetStringBoundingBox(str).width, min_width);
 			}
-			this->min_number_of_fixed_rows = max(this->min_number_of_fixed_rows, height);
-			this->min_number_of_columns = max(this->min_number_of_columns, num_columns);
+			this->min_number_of_fixed_rows = ::max(this->min_number_of_fixed_rows, height);
+			this->min_number_of_columns = ::max(this->min_number_of_columns, num_columns);
 		}
 
 		/* The width of a column is the minimum width of all texts + the size of the blob + some spacing */
@@ -1192,7 +1192,7 @@ public:
 
 			case SM_WIDGET_LEGEND: {
 				uint columns = this->GetNumberColumnsLegend(r.right - r.left + 1);
-				uint number_of_rows = max((this->map_type == SMT_INDUSTRY || this->map_type == SMT_OWNER) ? CeilDiv(max(_smallmap_company_count, _smallmap_industry_count), columns) : 0, this->min_number_of_fixed_rows);
+				uint number_of_rows = ::max((this->map_type == SMT_INDUSTRY || this->map_type == SMT_OWNER) ? CeilDiv(::max(_smallmap_company_count, _smallmap_industry_count), columns) : 0, this->min_number_of_fixed_rows);
 				bool rtl = _current_text_dir == TD_RTL;
 				uint y_org = r.top + WD_FRAMERECT_TOP;
 				uint x = rtl ? r.right - this->column_width - WD_FRAMERECT_RIGHT : r.left + WD_FRAMERECT_LEFT;
@@ -1337,7 +1337,7 @@ public:
 					const NWidgetBase *wi = this->GetWidget<NWidgetBase>(SM_WIDGET_LEGEND); // Label panel
 					uint line = (pt.y - wi->pos_y - WD_FRAMERECT_TOP) / FONT_HEIGHT_SMALL;
 					uint columns = this->GetNumberColumnsLegend(wi->current_x);
-					uint number_of_rows = max(CeilDiv(max(_smallmap_company_count, _smallmap_industry_count), columns), this->min_number_of_fixed_rows);
+					uint number_of_rows = ::max(CeilDiv(::max(_smallmap_company_count, _smallmap_industry_count), columns), this->min_number_of_fixed_rows);
 					if (line >= number_of_rows) break;
 
 					bool rtl = _current_text_dir == TD_RTL;
@@ -1550,7 +1550,7 @@ public:
 
 		int sub;
 		const NWidgetBase *wid = this->GetWidget<NWidgetBase>(SM_WIDGET_MAP);
-		Point sxy = this->ComputeScroll(pt.x / TILE_SIZE, pt.y / TILE_SIZE, max(0, (int)wid->current_x / 2 - 2), wid->current_y / 2, &sub);
+		Point sxy = this->ComputeScroll(pt.x / TILE_SIZE, pt.y / TILE_SIZE, ::max(0, (int)wid->current_x / 2 - 2), wid->current_y / 2, &sub);
 		this->SetNewScroll(sxy.x, sxy.y, sub);
 		this->SetDirty();
 	}
@@ -1584,12 +1584,12 @@ public:
 		bar->SetupSmallestSize(w, init_array);
 
 		this->smallmap_window = dynamic_cast<SmallMapWindow *>(w);
-		this->smallest_x = max(display->smallest_x, bar->smallest_x + smallmap_window->GetMinLegendWidth());
-		this->smallest_y = display->smallest_y + max(bar->smallest_y, smallmap_window->GetLegendHeight(smallmap_window->min_number_of_columns));
-		this->fill_x = max(display->fill_x, bar->fill_x);
-		this->fill_y = (display->fill_y == 0 && bar->fill_y == 0) ? 0 : min(display->fill_y, bar->fill_y);
-		this->resize_x = max(display->resize_x, bar->resize_x);
-		this->resize_y = min(display->resize_y, bar->resize_y);
+		this->smallest_x = ::max(display->smallest_x, bar->smallest_x + smallmap_window->GetMinLegendWidth());
+		this->smallest_y = display->smallest_y + ::max(bar->smallest_y, smallmap_window->GetLegendHeight(smallmap_window->min_number_of_columns));
+		this->fill_x = ::max(display->fill_x, bar->fill_x);
+		this->fill_y = (display->fill_y == 0 && bar->fill_y == 0) ? 0 : ::min(display->fill_y, bar->fill_y);
+		this->resize_x = ::max(display->resize_x, bar->resize_x);
+		this->resize_y = ::min(display->resize_y, bar->resize_y);
 	}
 
 	virtual void AssignSizePosition(SizingType sizing, uint x, uint y, uint given_width, uint given_height, bool rtl)

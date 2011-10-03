@@ -173,6 +173,7 @@ void GamelogPrint(GamelogPrintProc *proc)
 	char buf[GAMELOG_BUF_LEN];
 	GrfIDMapping grf_names;
 
+	//fprintf(stderr, "GamelogPrint start\n");
 	proc("---- gamelog start ----");
 
 	const LoggedAction *laend = &_gamelog_action[_gamelog_actions];
@@ -180,6 +181,7 @@ void GamelogPrint(GamelogPrintProc *proc)
 	for (const LoggedAction *la = _gamelog_action; la != laend; la++) {
 		assert((uint)la->at < GLAT_END);
 
+		//fprintf(stderr, "GamelogPrint tick\n");
 		snprintf(buf, GAMELOG_BUF_LEN, "Tick %u: %s", (uint)la->tick, la_text[(uint)la->at]);
 		proc(buf);
 
@@ -188,6 +190,7 @@ void GamelogPrint(GamelogPrintProc *proc)
 		for (const LoggedChange *lc = la->change; lc != lcend; lc++) {
 			_dbgofs = 0;
 			AddDebugText(buf, "     ");
+			//fprintf(stderr, "GamelogPrint change (ct=%d)\n", lc->ct);
 
 			switch (lc->ct) {
 				default: NOT_REACHED();
@@ -318,6 +321,7 @@ void GamelogPrint(GamelogPrintProc *proc)
 	}
 
 	proc("---- gamelog end ----");
+	//fprintf(stderr, "GamelogPrint end\n");
 }
 
 

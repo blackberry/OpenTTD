@@ -26,6 +26,10 @@
 #include <pspaudiolib.h>
 #endif /* PSP */
 
+#if defined(__PLAYBOOK__)
+#include "../mixer.h"
+#endif /* PLAYBOOK */
+
 /** The state of playing. */
 enum MidiState {
 	MIDI_STOPPED = 0,
@@ -40,6 +44,9 @@ static struct {
 	MidiState status;
 	uint32 song_length;
 	uint32 song_position;
+#if defined(__PLAYBOOK__)
+	MixerChannel *channel;
+#endif
 } _midi; ///< Metadata about the midi we're playing.
 
 #if defined(PSP)
@@ -52,8 +59,45 @@ static void AudioOutCallback(void *buf, unsigned int _reqn, void *userdata)
 }
 #endif /* PSP */
 
+#if defined(__PLAYBOOK__)
+static void MusicCallback(int16* buffer, uint samples)
+{
+	if (_midi.status == MIDI_PLAYING) {
+		static int8 mem[4096];
+		int8* memory = &mem[0];
+		bool allocated = false;
+		if (samples*4 != 4096) {
+			memory = (int8*)malloc(samples*4);
+			allocated = true;
+		}
+
+		size_t size = mid_song_read_wave(_midi.song, memory, samples*4);
+		bool deactivate = false;
+		if (samples > size/4) {
+			samples = size/4;
+			deactivate = true;
+		}
+		MxMixMusic(buffer, samples, (const int16 *)memory);
+		if (allocated)
+			free(memory);
+
+		if (deactivate) {
+			MxDeactivateMusic();
+		}
+	} else {
+		MxDeactivateMusic();
+	}
+}
+#endif /* PLAYBOOK */
 /** Factory for the libtimidity driver. */
 static FMusicDriver_LibTimidity iFMusicDriver_LibTimidity;
+
+#ifdef __PLAYBOOK__
+void ForceInitMusicDriver_Timidity()
+{
+	fprintf(stderr, "Initializing Timidity music driver\n");
+}
+#endif
 
 const char *MusicDriver_LibTimidity::Start(const char * const *param)
 {
@@ -77,6 +121,15 @@ const char *MusicDriver_LibTimidity::Start(const char * const *param)
 	_midi.options.buffer_size = PSP_NUM_AUDIO_SAMPLES;
 #else
 	_midi.options.buffer_size = _midi.options.rate;
+#endif
+
+#if defined(__PLAYBOOK__)
+	_midi.channel = MxAllocateMusicChannel(&MusicCallback);
+	if (_midi.channel == NULL) {
+		return "Failed to allocate music channel";
+	} else {
+		MxSetChannelVolume(_midi.channel, 16384, 0.5);
+	}
 #endif
 
 #if defined(PSP)
@@ -115,6 +168,11 @@ void MusicDriver_LibTimidity::PlaySong(const char *filename)
 
 	mid_song_start(_midi.song);
 	_midi.status = MIDI_PLAYING;
+#if defined(__PLAYBOOK__)
+	if (_midi.channel != NULL) {
+		MxActivateChannel(_midi.channel);
+	}
+#endif
 }
 
 void MusicDriver_LibTimidity::StopSong()
@@ -123,6 +181,7 @@ void MusicDriver_LibTimidity::StopSong()
 	/* mid_song_free cannot handle NULL! */
 	if (_midi.song != NULL) mid_song_free(_midi.song);
 	_midi.song = NULL;
+	MxDeactivateMusic();
 }
 
 bool MusicDriver_LibTimidity::IsSongPlaying()
@@ -141,4 +200,6 @@ bool MusicDriver_LibTimidity::IsSongPlaying()
 void MusicDriver_LibTimidity::SetVolume(byte vol)
 {
 	if (_midi.song != NULL) mid_song_set_volume(_midi.song, vol);
+	if (_midi.channel != NULL)
+		MxSetChannelVolume(_midi.channel, vol * 128, 0.5);
 }

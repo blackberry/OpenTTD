@@ -25,7 +25,11 @@ public:
 
 	/* virtual */ void StopSong() { }
 
+#ifdef __PLAYBOOK__
+	/* virtual */ bool IsSongPlaying() { return false; }
+#else
 	/* virtual */ bool IsSongPlaying() { return true; }
+#endif
 
 	/* virtual */ void SetVolume(byte vol) { }
 	/* virtual */ const char *GetName() const { return "null"; }

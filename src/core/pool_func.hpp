@@ -51,7 +51,7 @@ DEFINE_POOL_METHOD(inline void)::ResizeFor(size_t index)
 	assert(index >= this->size);
 	assert(index < Tmax_size);
 
-	size_t new_size = min(Tmax_size, Align(index + 1, Tgrowth_step));
+	size_t new_size = ::min(Tmax_size, Align(index + 1, Tgrowth_step));
 
 	this->data = ReallocT(this->data, new_size);
 	MemSetT(this->data + this->size, 0, new_size - this->size);
@@ -99,7 +99,7 @@ DEFINE_POOL_METHOD(inline void *)::AllocateItem(size_t size, size_t index)
 {
 	assert(this->data[index] == NULL);
 
-	this->first_unused = max(this->first_unused, index + 1);
+	this->first_unused = ::max(this->first_unused, index + 1);
 	this->items++;
 
 	Titem *item;
@@ -180,7 +180,7 @@ DEFINE_POOL_METHOD(void)::FreeItem(size_t index)
 		free(this->data[index]);
 	}
 	this->data[index] = NULL;
-	this->first_free = min(this->first_free, index);
+	this->first_free = ::min(this->first_free, index);
 	this->items--;
 	if (!this->cleaning) Titem::PostDestructor(index);
 }

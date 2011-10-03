@@ -67,7 +67,7 @@ static FORCEINLINE T min(const T a, const T b)
  */
 static FORCEINLINE int min(const int a, const int b)
 {
-	return min<int>(a, b);
+	return ::min<int>(a, b);
 }
 
 /**
@@ -81,7 +81,7 @@ static FORCEINLINE int min(const int a, const int b)
  */
 static FORCEINLINE uint minu(const uint a, const uint b)
 {
-	return min<uint>(a, b);
+	return ::min<uint>(a, b);
 }
 
 /**
@@ -230,7 +230,7 @@ static FORCEINLINE uint16 ClampToU16(const uint64 a)
 	 * match for min(uint64, uint) than uint64 min(uint64, uint64). As such we
 	 * need to cast the UINT16_MAX to prevent MSVC from displaying its
 	 * infinite loads of warnings. */
-	return (uint16)min<uint64>(a, (uint64)UINT16_MAX);
+	return (uint16)::min<uint64>(a, (uint64)UINT16_MAX);
 }
 
 /**

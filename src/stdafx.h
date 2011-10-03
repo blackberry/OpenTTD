@@ -290,6 +290,53 @@ typedef unsigned char byte;
 /* This is already defined in unix, but not in QNX Neutrino (6.x)*/
 #if (!defined(UNIX) && !defined(__CYGWIN__) && !defined(__BEOS__) && !defined(__HAIKU__) && !defined(__MORPHOS__)) || defined(__QNXNTO__)
 	typedef unsigned int uint;
+	using std::size_t;
+	using std::malloc;
+	using std::calloc;
+	using std::realloc;
+	using std::free;
+	using std::strerror;
+	using std::strchr;
+	using std::strlen;
+	using std::strcmp;
+	using std::strncmp;
+	using std::strcpy;
+	using std::strncpy;
+	using std::strcat;
+	using std::strstr;
+	using std::strrchr;
+	using std::strtol;
+	using std::strtoul;
+	using std::ptrdiff_t;
+	using std::vsnprintf;
+	using std::memcmp;
+	using std::memset;
+	using std::memcpy;
+	using std::memmove;
+	using std::qsort;
+	using std::atoi;
+	using std::printf;
+	using std::abort;
+	using std::FILE;
+	using std::fread;
+	using std::fseek;
+	using std::ftell;
+	using std::fwrite;
+	using std::fopen;
+	using std::fclose;
+	using std::sprintf;
+	using std::fprintf;
+	using std::fflush;
+	using std::ferror;
+	using std::fputs;
+	using std::fgets;
+	using std::puts;
+	using std::rename;
+	using std::clearerr;
+	using std::exit;
+	using std::abs;
+	using std::getenv;
+	using std::fileno;
 #endif
 
 #if defined(TROUBLED_INTS)

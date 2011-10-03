@@ -57,7 +57,7 @@ static void OS2_SwitchToConsoleMode()
 }
 #endif
 
-#if defined(UNIX) || defined(PSP)
+#if defined(UNIX) || defined(PSP) || defined(__PLAYBOOK__)
 #	include <sys/time.h> /* gettimeofday */
 #	include <sys/types.h>
 #	include <unistd.h>
@@ -184,7 +184,7 @@ void VideoDriver_Dedicated::MakeDirty(int left, int top, int width, int height) 
 bool VideoDriver_Dedicated::ChangeResolution(int w, int h) { return false; }
 bool VideoDriver_Dedicated::ToggleFullscreen(bool fs) { return false; }
 
-#if defined(UNIX) || defined(__OS2__) || defined(PSP)
+#if defined(UNIX) || defined(__OS2__) || defined(PSP) || defined(__PLAYBOOK__)
 static bool InputWaiting()
 {
 	struct timeval tv;
@@ -230,7 +230,7 @@ static void DedicatedHandleKeyInput()
 
 	if (_exit_game) return;
 
-#if defined(UNIX) || defined(__OS2__) || defined(PSP)
+#if defined(UNIX) || defined(__OS2__) || defined(PSP) || defined(__PLAYBOOK__)
 	if (fgets(input_line, lengthof(input_line), stdin) == NULL) return;
 #else
 	/* Handle console input, and singal console thread, it can accept input again */
@@ -241,7 +241,7 @@ static void DedicatedHandleKeyInput()
 
 	/* strtok() does not 'forget' \r\n if the string starts with it,
 	 * so we have to manually remove that! */
-	strtok(input_line, "\r\n");
+	std::strtok(input_line, "\r\n");
 	for (char *c = input_line; *c != '\0'; c++) {
 		if (*c == '\n' || *c == '\r' || c == lastof(input_line)) {
 			*c = '\0';
@@ -259,7 +259,7 @@ void VideoDriver_Dedicated::MainLoop()
 	uint32 next_tick = cur_ticks + MILLISECONDS_PER_TICK;
 
 	/* Signal handlers */
-#if defined(UNIX) || defined(PSP)
+#if defined(UNIX) || defined(PSP) || defined(__PLAYBOOK__)
 	signal(SIGTERM, DedicatedSignalHandler);
 	signal(SIGINT, DedicatedSignalHandler);
 	signal(SIGQUIT, DedicatedSignalHandler);

@@ -128,8 +128,8 @@ static inline void OTTDfreeaddrinfo(struct addrinfo *ai)
 #endif /* WIN32 */
 
 /* UNIX stuff */
-#if defined(UNIX) && !defined(__OS2__)
-#	if defined(OPENBSD) || defined(__NetBSD__)
+#if defined(__QNXNTO__) || (defined(UNIX) && !defined(__OS2__))
+#	if defined(OPENBSD) || defined(__NetBSD__) || defined(__PLAYBOOK__)
 #		define AI_ADDRCONFIG 0
 #	endif
 #	define SOCKET int

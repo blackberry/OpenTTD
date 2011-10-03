@@ -43,6 +43,13 @@ static volatile bool _draw_continue;
 static SDL_Rect _dirty_rects[MAX_DIRTY_RECTS];
 static int _num_dirty_rects;
 
+#ifdef __PLAYBOOK__
+void ForceInitVideoDriver_SDL()
+{
+	fprintf(stderr, "Initializing SDL video driver\n");
+}
+#endif
+
 void VideoDriver_SDL::MakeDirty(int left, int top, int width, int height)
 {
 	if (_num_dirty_rects < MAX_DIRTY_RECTS) {

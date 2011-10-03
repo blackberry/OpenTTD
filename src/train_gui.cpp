@@ -68,9 +68,9 @@ static int HighlightDragPosition(int px, int max_width, VehicleID selection)
 	Point offset;
 	int dragged_width = Train::Get(selection)->GetDisplayImageWidth(&offset) + WD_FRAMERECT_LEFT + WD_FRAMERECT_RIGHT;
 
-	int drag_hlight_left = rtl ? max(px -dragged_width, 0) : px;
-	int drag_hlight_right = rtl ? px : min(px + dragged_width, max_width);
-	int drag_hlight_width = max(drag_hlight_right - drag_hlight_left, 0);
+	int drag_hlight_left = rtl ? ::max(px -dragged_width, 0) : px;
+	int drag_hlight_right = rtl ? px : ::min(px + dragged_width, max_width);
+	int drag_hlight_width = ::max(drag_hlight_right - drag_hlight_left, 0);
 
 	if (drag_hlight_width > 0) {
 		GfxFillRect(drag_hlight_left + WD_FRAMERECT_LEFT, WD_FRAMERECT_TOP + 1,
@@ -317,7 +317,7 @@ int GetTrainDetailsWndVScroll(VehicleID veh_id, TrainDetailsWindowTabs det_tab)
 	} else {
 		for (const Train *v = Train::Get(veh_id); v != NULL; v = v->GetNextVehicle()) {
 			GetCargoSummaryOfArticulatedVehicle(v, &_cargo_summary);
-			num += max(1u, _cargo_summary.Length());
+			num += ::max(1u, _cargo_summary.Length());
 
 			uint length = GetLengthOfArticulatedVehicle(v);
 			if (length > TRAIN_DETAILS_MAX_INDENT) num++;
@@ -372,9 +372,9 @@ void DrawTrainDetails(const Train *v, int left, int right, int y, int vscroll_po
 				dx = 0;
 			}
 
-			uint num_lines = max(1u, _cargo_summary.Length());
+			uint num_lines = ::max(1u, _cargo_summary.Length());
 			for (uint i = 0; i < num_lines; i++) {
-				int sprite_width = max<int>(dx, TRAIN_DETAILS_MIN_INDENT) + 3;
+				int sprite_width = ::max<int>(dx, TRAIN_DETAILS_MIN_INDENT) + 3;
 				int data_left  = left + (rtl ? 0 : sprite_width);
 				int data_right = right - (rtl ? sprite_width : 0);
 				if (vscroll_pos <= 0 && vscroll_pos > -vscroll_cap) {

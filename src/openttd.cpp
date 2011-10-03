@@ -84,6 +84,12 @@ extern Company *DoStartupNewCompany(bool is_ai, CompanyID company = INVALID_COMP
 extern void ShowOSErrorBox(const char *buf, bool system);
 extern char *_config_file;
 
+#ifdef __PLAYBOOK__
+void ForceInitVideoDriver_SDL();
+void ForceInitSoundDriver_SDL();
+void ForceInitMusicDriver_Timidity();
+#endif
+
 /**
  * Error handling for fatal user errors.
  * @param s the string to print.
@@ -227,8 +233,8 @@ static void ParseResolution(Dimension *res, const char *s)
 		return;
 	}
 
-	res->width  = max(strtoul(s, NULL, 0), 64UL);
-	res->height = max(strtoul(t + 1, NULL, 0), 64UL);
+	res->width  = ::max(strtoul(s, NULL, 0), 64UL);
+	res->height = ::max(strtoul(t + 1, NULL, 0), 64UL);
 }
 
 static void InitializeDynamicVariables()
@@ -599,6 +605,11 @@ int ttd_main(int argc, char *argv[])
 	free(blitter);
 
 	DEBUG(driver, 1, "Loading drivers...");
+#ifdef __PLAYBOOK__
+	ForceInitVideoDriver_SDL();
+	ForceInitSoundDriver_SDL();
+	ForceInitMusicDriver_Timidity();
+#endif
 
 	if (sounddriver == NULL && _ini_sounddriver != NULL) sounddriver = strdup(_ini_sounddriver);
 	_sound_driver = (SoundDriver*)SoundDriverFactoryBase::SelectDriver(sounddriver, Driver::DT_SOUND);
