@@ -1,0 +1,1559 @@
+##name Urdu
+##ownname Urdu
+##isocode ur_PK
+##plural 0
+##textdir rtl
+##digitsep ٬
+##digitsepcur ٬
+##decimalsep ٫
+##winlangid 0x0420
+##grflangid 0x5c
+##gender m f
+
+
+# $Id$
+
+# This file is part of OpenTTD.
+# OpenTTD is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+# OpenTTD is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with OpenTTD. If not, see <http://www.gnu.org/licenses/>.
+
+
+##id 0x0000
+STR_NULL                                                        :
+STR_EMPTY                                                       :
+STR_JUST_NOTHING                                                :کچھ نہیں
+
+# Cargo related strings
+# Plural cargo name
+STR_CARGO_PLURAL_NOTHING                                        :
+STR_CARGO_PLURAL_PASSENGERS                                     :مسافر
+STR_CARGO_PLURAL_COAL                                           :کویلہ
+STR_CARGO_PLURAL_MAIL                                           :ڈاک
+STR_CARGO_PLURAL_OIL                                            :تیل
+STR_CARGO_PLURAL_LIVESTOCK                                      :مویشی
+STR_CARGO_PLURAL_GOODS                                          :سامان تجارت
+STR_CARGO_PLURAL_GRAIN                                          :اناج
+STR_CARGO_PLURAL_WOOD                                           :لکڑی
+STR_CARGO_PLURAL_IRON_ORE                                       :خام لوہا
+STR_CARGO_PLURAL_STEEL                                          :سٹیل
+STR_CARGO_PLURAL_VALUABLES                                      :قیمتی سامان
+STR_CARGO_PLURAL_COPPER_ORE                                     :خام تانبا
+STR_CARGO_PLURAL_MAIZE                                          :مکی
+STR_CARGO_PLURAL_FRUIT                                          :پھل
+STR_CARGO_PLURAL_DIAMONDS                                       :ہیرے
+STR_CARGO_PLURAL_FOOD                                           :کھانا
+STR_CARGO_PLURAL_PAPER                                          :کاغذ
+STR_CARGO_PLURAL_GOLD                                           :سونا
+STR_CARGO_PLURAL_WATER                                          :پانی
+STR_CARGO_PLURAL_WHEAT                                          :گندم
+STR_CARGO_PLURAL_RUBBER                                         :ربڑ
+STR_CARGO_PLURAL_SUGAR                                          :چینی
+STR_CARGO_PLURAL_TOYS                                           :کھلونے
+STR_CARGO_PLURAL_CANDY                                          :مٹھایاں
+STR_CARGO_PLURAL_COLA                                           :کوئلہ
+STR_CARGO_PLURAL_COTTON_CANDY                                   :کینڈی فلاس
+STR_CARGO_PLURAL_BUBBLES                                        :بلبلے
+STR_CARGO_PLURAL_TOFFEE                                         :ٹافی
+STR_CARGO_PLURAL_BATTERIES                                      :بیٹریاں
+STR_CARGO_PLURAL_PLASTIC                                        :پلاسٹک
+STR_CARGO_PLURAL_FIZZY_DRINKS                                   :گیسی مشروب
+
+# Singular cargo name
+STR_CARGO_SINGULAR_NOTHING                                      :
+STR_CARGO_SINGULAR_PASSENGER                                    :مسافر
+STR_CARGO_SINGULAR_COAL                                         :کویلہ
+STR_CARGO_SINGULAR_MAIL                                         :ڈاک
+STR_CARGO_SINGULAR_OIL                                          :تیل
+STR_CARGO_SINGULAR_LIVESTOCK                                    :مویشی
+STR_CARGO_SINGULAR_GOODS                                        :سامان
+STR_CARGO_SINGULAR_GRAIN                                        :اناج
+STR_CARGO_SINGULAR_WOOD                                         :لکڑی
+STR_CARGO_SINGULAR_IRON_ORE                                     :خام لوہا
+STR_CARGO_SINGULAR_STEEL                                        :فولاد
+STR_CARGO_SINGULAR_VALUABLES                                    :قیمتی سامان
+STR_CARGO_SINGULAR_COPPER_ORE                                   :خام تانبا
+STR_CARGO_SINGULAR_MAIZE                                        :مکیی
+STR_CARGO_SINGULAR_FRUIT                                        :پھل
+STR_CARGO_SINGULAR_DIAMOND                                      :ہیرا
+STR_CARGO_SINGULAR_FOOD                                         :کھانا
+STR_CARGO_SINGULAR_PAPER                                        :کاغذ
+STR_CARGO_SINGULAR_GOLD                                         :سونا
+STR_CARGO_SINGULAR_WATER                                        :پانی
+STR_CARGO_SINGULAR_WHEAT                                        :گندم
+STR_CARGO_SINGULAR_RUBBER                                       :ربڑ
+STR_CARGO_SINGULAR_SUGAR                                        :چینی
+STR_CARGO_SINGULAR_TOY                                          :کھلونا
+STR_CARGO_SINGULAR_CANDY                                        :مٹھائی
+STR_CARGO_SINGULAR_COLA                                         :کولا
+STR_CARGO_SINGULAR_COTTON_CANDY                                 :کینڈی فلاس
+STR_CARGO_SINGULAR_BUBBLE                                       :بلبلہ
+STR_CARGO_SINGULAR_TOFFEE                                       :ٹافی
+STR_CARGO_SINGULAR_BATTERY                                      :بیٹری
+STR_CARGO_SINGULAR_PLASTIC                                      :پلاسٹک
+STR_CARGO_SINGULAR_FIZZY_DRINK                                  :گیسی مشروب
+
+# Quantity of cargo
+STR_QUANTITY_NOTHING                                            :
+STR_QUANTITY_PASSENGERS                                         :{P 0 مسافر مسافرﻴﻦ}{COMMA}
+STR_QUANTITY_COAL                                               :{WEIGHT} کویلہ
+STR_QUANTITY_MAIL                                               :{COMMA} ڈاک ک{P ا ے} تھیل{P ا ے}
+STR_QUANTITY_OIL                                                :{VOLUME} تیل
+STR_QUANTITY_LIVESTOCK                                          :{COMMA} عدد مویشی
+STR_QUANTITY_GOODS                                              :سامان ک{P 0 ا ے} {COMMA} کریٹ
+STR_QUANTITY_GRAIN                                              :{WEIGHT} انآج
+STR_QUANTITY_WOOD                                               :{WEIGHT} لکڑی
+STR_QUANTITY_IRON_ORE                                           :{WEIGHT} خام لوہا
+STR_QUANTITY_STEEL                                              :{WEIGHT} سٹیل
+STR_QUANTITY_VALUABLES                                          :قیمتی سامان ک{P 0 ا ے} {COMMA} تھیل{P ا ے}
+STR_QUANTITY_COPPER_ORE                                         :خام دھات تانبے کا {WEIGHT} وزن
+STR_QUANTITY_MAIZE                                              :مکئی کا {WEIGHT} وزن
+STR_QUANTITY_FRUIT                                              :پھل کا {WEIGHT} وزن
+STR_QUANTITY_DIAMONDS                                           :ھیرے کے {COMMA} تھیل{P ا ے}
+STR_QUANTITY_FOOD                                               :خوراک کا {WEIGHT} وزن
+STR_QUANTITY_PAPER                                              :کاغز کا {WEIGHT} وزن
+STR_QUANTITY_GOLD                                               :سونے ک{P 0 ا ے} {COMMA} تھیل{P ا ے}
+STR_QUANTITY_WATER                                              :{VOLUME} پانی
+STR_QUANTITY_WHEAT                                              :گندم کا {WEIGHT} وزن
+STR_QUANTITY_RUBBER                                             :{VOLUME} ربڑ
+STR_QUANTITY_SUGAR                                              :چینی کا {WEIGHT} وزن
+STR_QUANTITY_TOYS                                               :{COMMA} کھلون{P ا ے}
+STR_QUANTITY_SWEETS                                             :مٹھائی ک{P 0 ا ے} {COMMA} تھیل{P ا ے}
+STR_QUANTITY_COLA                                               :{VOLUME} کولا
+STR_QUANTITY_CANDYFLOSS                                         :گڑیا کے بالوں کا {WEIGHT} وزن
+STR_QUANTITY_BUBBLES                                            :{COMMA} ببل
+STR_QUANTITY_TOFFEE                                             :ٹافی کا {WEIGHT} وزن
+STR_QUANTITY_BATTERIES                                          :{COMMA} بیٹر{P ی یاں}
+STR_QUANTITY_PLASTIC                                            :{VOLUME} پلاسٹک
+STR_QUANTITY_FIZZY_DRINKS                                       :{COMMA} کولڈ ڈرنک
+STR_QUANTITY_N_A                                                :-
+
+# Two letter abbreviation of cargo name
+STR_ABBREV_COAL                                                 :{TINYFONT} کل
+STR_ABBREV_MAIL                                                 :{TINYFONT} ڈاک
+STR_ABBREV_OIL                                                  :{TINYFONT} تیل
+STR_ABBREV_LIVESTOCK                                            :{TINYFONT} م ش
+STR_ABBREV_GOODS                                                :{TINYFONT} س م
+
+# 'Mode' of transport for cargoes
+STR_PASSENGERS                                                  :{COMMA} مسافرین
+STR_BAGS                                                        :{COMMA} تھیلا{P "" ے}
+STR_TONS                                                        :{COMMA} من
+STR_LITERS                                                      :{COMMA} لیٹر
+STR_ITEMS                                                       :{COMMA} چیز{P "" یں}
+STR_CRATES                                                      :{COMMA} کریٹ
+
+# Colours, do not shuffle
+STR_COLOUR_DARK_BLUE                                            :گہرا نیلا
+STR_COLOUR_PALE_GREEN                                           :ہلکا سبز
+STR_COLOUR_PINK                                                 :گلابی
+STR_COLOUR_YELLOW                                               :پیلا
+STR_COLOUR_RED                                                  :سرخ
+STR_COLOUR_LIGHT_BLUE                                           :ہلکا نیلا
+STR_COLOUR_GREEN                                                :سبز
+STR_COLOUR_DARK_GREEN                                           :گہرا سبز
+STR_COLOUR_BLUE                                                 :نیلا
+STR_COLOUR_CREAM                                                :بالائی
+STR_COLOUR_PURPLE                                               :جامنی
+STR_COLOUR_ORANGE                                               :نارنجی
+STR_COLOUR_BROWN                                                :بھورا
+STR_COLOUR_GREY                                                 :سلیٹی
+STR_COLOUR_WHITE                                                :سفید
+
+# Units used in OpenTTD
+STR_UNITS_VELOCITY_IMPERIAL                                     :{COMMA} میل فی گھنٹھ
+STR_UNITS_VELOCITY_METRIC                                       :{COMMA} کلو میٹر فی گھنٹھ
+STR_UNITS_VELOCITY_SI                                           :{COMMA} میٹر فی سیکنڈ
+
+STR_UNITS_POWER_IMPERIAL                                        :{COMMA} ھارس پآور
+STR_UNITS_POWER_METRIC                                          :{COMMA} ھارس پآور
+STR_UNITS_POWER_SI                                              :{COMMA} کلو واٹ
+
+STR_UNITS_WEIGHT_SHORT_METRIC                                   :{COMMA} من
+STR_UNITS_WEIGHT_SHORT_SI                                       :{COMMA} kg
+
+STR_UNITS_WEIGHT_LONG_METRIC                                    :{COMMA} من
+STR_UNITS_WEIGHT_LONG_SI                                        :{COMMA} kg
+
+STR_UNITS_VOLUME_SHORT_METRIC                                   :{COMMA} l
+STR_UNITS_VOLUME_SHORT_SI                                       :{COMMA}m³
+
+STR_UNITS_VOLUME_LONG_METRIC                                    :{COMMA} لیٹر
+STR_UNITS_VOLUME_LONG_SI                                        :{COMMA} m³
+
+STR_UNITS_FORCE_SI                                              :{COMMA} kN
+
+STR_UNITS_HEIGHT_IMPERIAL                                       :{COMMA} فٹ
+STR_UNITS_HEIGHT_SI                                             :{COMMA} میٹر
+
+# Common window strings
+STR_LIST_FILTER_OSKTITLE                                        :{BLACK} چھان کے الفاظ درج کیجیئے
+STR_LIST_FILTER_TOOLTIP                                         :{BLACK} فھرست کے چھان کے لیے کوئی حرف دیجیئے
+
+STR_TOOLTIP_SORT_ORDER                                          :{BLACK} (ترتیب کا طریقہ منتخب کریں (کم ہوتا/بڑھتا
+STR_TOOLTIP_SORT_CRITERIA                                       :{BLACK}ترتیب کا طریقہ منتخب کریں
+STR_TOOLTIP_FILTER_CRITERIA                                     :{BLACK} چھاننے کے اصول چنیئے
+STR_BUTTON_SORT_BY                                              :{BLACK}سے ترتیب دو
+STR_BUTTON_LOCATION                                             :{BLACK}جگہ
+STR_BUTTON_RENAME                                               :{BLACK} تبادلھء نام
+
+STR_TOOLTIP_CLOSE_WINDOW                                        :{BLACK}کھڑکی بند کرو
+STR_TOOLTIP_WINDOW_TITLE_DRAG_THIS                              :{BLACK}کھڑکی کا نام - کھڑکی کو ہلانے کیلیے اسے پکڑ کر ہلاو
+STR_TOOLTIP_SHADE                                               :{BLACK} ونڈو چھبایئے - صرف ٹائٹل نظر آئے گا
+STR_TOOLTIP_DEBUG                                               :{BLACK} NewGRF کی debug معلومات دکھایئے
+STR_TOOLTIP_STICKY                                              :{BLACK} نشان لگایئے تاکھ یھ ونڈو "Close All Windows" کے بٹن سے بند ناھو
+STR_TOOLTIP_RESIZE                                              :{BLACK} کلک اورگھسیٹ کر ونڈو کے پیمانے تبدیل کیجئے
+STR_TOOLTIP_TOGGLE_LARGE_SMALL_WINDOW                           :{BLACK} ونڈو کا بڑا یا چھوٹا پیمانا چنیئے
+STR_TOOLTIP_VSCROLL_BAR_SCROLLS_LIST                            :{BLACK} فھرستی پٹی - فھرست کو اوپر نیچے کرنے کے لیے
+STR_TOOLTIP_HSCROLL_BAR_SCROLLS_LIST                            :{BLACK} فھرستی پٹی - فھرست کو دایئں بایئں کرنے کے لیے
+STR_TOOLTIP_DEMOLISH_BUILDINGS_ETC                              :{BLACK}زمین کے ایک مربے پر عمارتیں وغیرہ گراو
+
+# Query window
+STR_BUTTON_CANCEL                                               :{BLACK} ترک کیجیئے
+STR_BUTTON_OK                                                   :{BLACK} او کے
+
+# On screen keyboard window
+STR_OSK_KEYBOARD_LAYOUT                                         :ً1234567890-=\ق و ع ر ت ے ء ی ہ پ ] [ ا س د ف گ ح ج ک ل ؛ ' ز ش چ ط ب ن م ، ۔ /
+
+# Measurement tooltip
+STR_MEASURE_LENGTH                                              :{BLACK} لمبائی: {NUM}
+STR_MEASURE_AREA                                                :{BLACK} پھیلاؤ: {NUM} x {NUM}
+STR_MEASURE_LENGTH_HEIGHTDIFF                                   :{BLACK} لمبائی: {NUM} {}تفریقِ اونچائی: {HEIGHT}
+STR_MEASURE_AREA_HEIGHTDIFF                                     :{BLACK} پھیلاؤ: {NUM} x {NUM} {}تفریقِ اونچائی: {HEIGHT}
+
+
+# These are used in buttons
+STR_SORT_BY_CAPTION_POPULATION                                  :{BLACK}آبادی
+STR_SORT_BY_CAPTION_NAME                                        :{BLACK}نام
+STR_SORT_BY_CAPTION_DATE                                        :{BLACK}تاریخ
+# These are used in dropdowns
+STR_SORT_BY_POPULATION                                          :آبادی
+STR_SORT_BY_NAME                                                :نام
+STR_SORT_BY_PRODUCTION                                          :پیداوار
+STR_SORT_BY_TYPE                                                :طرز
+STR_SORT_BY_TRANSPORTED                                         :منتقل شدہ
+STR_SORT_BY_NUMBER                                              :تعداد
+STR_SORT_BY_PROFIT_LAST_YEAR                                    :پچھلے سال کا منافع
+STR_SORT_BY_PROFIT_THIS_YEAR                                    :اس سال کا منافع
+STR_SORT_BY_AGE                                                 :عمر
+STR_SORT_BY_RELIABILITY                                         :اعتماد
+STR_SORT_BY_TOTAL_CAPACITY_PER_CARGOTYPE                        :طرزِ سامان کے مطابق کل گنجائش
+STR_SORT_BY_MAX_SPEED                                           :حدغایت رفتار
+STR_SORT_BY_MODEL                                               :نمونھ
+STR_SORT_BY_VALUE                                               :قیمت
+STR_SORT_BY_LENGTH                                              :لمبائی
+STR_SORT_BY_LIFE_TIME                                           :بقیھ زندگی
+STR_SORT_BY_TIMETABLE_DELAY                                     :ٹایم ٹیبل تاخیر
+STR_SORT_BY_FACILITY                                            :طرزِ اسٹیشن
+STR_SORT_BY_WAITING                                             :قیمتِ منتظر سامان
+STR_SORT_BY_RATING_MAX                                          :سامانی سرِ فھرست درجھ بندی
+STR_SORT_BY_RATING_MIN                                          :سامانی پیشِ فھرست درجھ بندی
+STR_SORT_BY_ENGINE_ID                                           :انجن کی شناخت (کلاسیکی چھانٹ)
+STR_SORT_BY_COST                                                :قیمت
+STR_SORT_BY_POWER                                               :طاقت
+STR_SORT_BY_INTRO_DATE                                          :تاریخِ تعارف
+STR_SORT_BY_RUNNING_COST                                        :قیمتِ رواں
+STR_SORT_BY_POWER_VS_RUNNING_COST                               :قیمتِ رواں/ طاقت
+STR_SORT_BY_CARGO_CAPACITY                                      :سامان کی گنجایش
+
+# Tooltips for the main toolbar
+STR_TOOLBAR_TOOLTIP_PAUSE_GAME                                  :{BLACK} کھیل میں وقفھ لیجیئے
+STR_TOOLBAR_TOOLTIP_FORWARD                                     :{BLACK} کھیل کو تیزی سے بڑھایئں
+STR_TOOLBAR_TOOLTIP_OPTIONS                                     :{BLACK} اختیارات
+STR_TOOLBAR_TOOLTIP_SAVE_GAME_ABANDON_GAME                      :{BLACK} کھیل بچایئے، کھیل دستبردار کیجیئے، منقطع کیجئے
+STR_TOOLBAR_TOOLTIP_DISPLAY_MAP                                 :{BLACK} نقشھ، اضافی منظر یا اشاروں کی فھرست
+STR_TOOLBAR_TOOLTIP_DISPLAY_TOWN_DIRECTORY                      :{BLACK} قصبوں کی کتاب دیکھیئے
+STR_TOOLBAR_TOOLTIP_DISPLAY_SUBSIDIES                           :{BLACK} امداد دیکھیئے
+STR_TOOLBAR_TOOLTIP_DISPLAY_LIST_OF_COMPANY_STATIONS            :{BLACK} کمپنی کے اسٹیشنوں کی فھرست دیکھیَے
+STR_TOOLBAR_TOOLTIP_DISPLAY_COMPANY_FINANCES                    :{BLACK}کمپنی کی مالیاتی معلومات دکھاو
+STR_TOOLBAR_TOOLTIP_DISPLAY_COMPANY_GENERAL                     :{BLACK}کمپنی کی عام معلومات دکھاو
+STR_TOOLBAR_TOOLTIP_DISPLAY_GRAPHS                              :{BLACK} مخطط دیکھیئے
+STR_TOOLBAR_TOOLTIP_DISPLAY_COMPANY_LEAGUE                      :{BLACK} کمہنی کی مسافتی فھرست دیکھیئے
+STR_TOOLBAR_TOOLTIP_FUND_CONSTRUCTION_OF_NEW                    :{BLACK} نئی صنعت کی تعمیر شروع کیجیئے یا فھرستِ صنعت دیکھیئے
+STR_TOOLBAR_TOOLTIP_DISPLAY_LIST_OF_COMPANY_TRAINS              :{BLACK}کمپنی کی ریل گاڑیوں کی فہرست دکھاو۔ Ctrl+Click سے گروپ یا ٹرینوں کی فہرست کھلتی یا بند ہوتی ہے
+STR_TOOLBAR_TOOLTIP_DISPLAY_LIST_OF_COMPANY_ROAD_VEHICLES       :{BLACK}کمپنی کی سڑک کی سواریوں کی فہرست دکھاو۔ Ctrl+Click سے گروپ یا گاڑیوں کی فہرست کھلتی یا بند ہوتی ہے
+STR_TOOLBAR_TOOLTIP_DISPLAY_LIST_OF_COMPANY_SHIPS               :{BLACK}کمپنی کی کشتیوں کی فہرست دکھاو۔ Ctrl+Click سے گروپ یا کشتیوں کی فہرست کھلتی یا بند ہوتی ہے
+STR_TOOLBAR_TOOLTIP_DISPLAY_LIST_OF_COMPANY_AIRCRAFT            :{BLACK}کمپنی کے ہوای جہازوں کی فہرست دکھاو۔ Ctrl+Click سے گروپ یا جہازوں کی فہرست کھلتی یا بند ہوتی ہے
+STR_TOOLBAR_TOOLTIP_ZOOM_THE_VIEW_IN                            :{BLACK}بڑا کر کے دکھاو
+STR_TOOLBAR_TOOLTIP_ZOOM_THE_VIEW_OUT                           :{BLACK}چھوٹا کر کے دکھاو
+STR_TOOLBAR_TOOLTIP_BUILD_RAILROAD_TRACK                        :{BLACK}ریل کی پٹری بچھاو
+STR_TOOLBAR_TOOLTIP_BUILD_ROADS                                 :{BLACK}سڑکیں بناو
+STR_TOOLBAR_TOOLTIP_BUILD_SHIP_DOCKS                            :{BLACK}بندرگاہیں بناو
+STR_TOOLBAR_TOOLTIP_BUILD_AIRPORTS                              :{BLACK}ہوای اڈے بناو
+STR_TOOLBAR_TOOLTIP_LANDSCAPING                                 :{BLACK} منظر کشی ٹول بآر کھولیئے اور زمین اوپر نیچے، درخت لگایئے، وغیرھ
+STR_TOOLBAR_TOOLTIP_SHOW_SOUND_MUSIC_WINDOW                     :{BLACK} آواز/موسیقی ونڈو دکھایئے
+STR_TOOLBAR_TOOLTIP_SHOW_LAST_MESSAGE_NEWS                      :{BLACK} آخری پیغام/ خبر دکھایئے، پیغام کے اختیارات کھولیئے
+STR_TOOLBAR_TOOLTIP_LAND_BLOCK_INFORMATION                      :{BLACK}زمینی رقبہ کی معلومات، کانسول،AI debug ،اسکرین شاٹس، Open TTD کے بارے میں
+STR_TOOLBAR_TOOLTIP_SWITCH_TOOLBAR                              :{BLACK} ٹول بآر منتقل کیجیئے
+
+# Extra tooltips for the scenario editor toolbar
+STR_SCENEDIT_TOOLBAR_TOOLTIP_SAVE_SCENARIO_LOAD_SCENARIO        :{BLACK} منظر بچایئے، منظر کھولیں، منظر دست بردار کیجیئے، منظر چھوڑیئے
+STR_SCENEDIT_TOOLBAR_OPENTTD                                    :{YELLOW}OpenTTD
+STR_SCENEDIT_TOOLBAR_SCENARIO_EDITOR                            :{YELLOW} منظر نامھ
+STR_SCENEDIT_TOOLBAR_TOOLTIP_MOVE_THE_STARTING_DATE_BACKWARD    :{BLACK}شروع کرنے کی تاریخ کو ایک سال پیچھے کرو
+STR_SCENEDIT_TOOLBAR_TOOLTIP_MOVE_THE_STARTING_DATE_FORWARD     :{BLACK}شروع کرنے کی تاریخ کو ایک سال آگے کرو
+STR_SCENEDIT_TOOLBAR_TOOLTIP_SET_DATE                           :{BLACK} کلک کر کے ابتدائی سال درج کیجیئے
+STR_SCENEDIT_TOOLBAR_TOOLTIP_DISPLAY_MAP_TOWN_DIRECTORY         :{BLACK} نقشھ، کتبِ قصبات
+STR_SCENEDIT_TOOLBAR_LANDSCAPE_GENERATION                       :{BLACK} منظر تخلیق
+STR_SCENEDIT_TOOLBAR_TOWN_GENERATION                            :{BLACK} قصبھ تخلیق
+STR_SCENEDIT_TOOLBAR_INDUSTRY_GENERATION                        :{BLACK} صنعت تخلیق
+STR_SCENEDIT_TOOLBAR_ROAD_CONSTRUCTION                          :{BLACK} سڑک کی تعمیر
+STR_SCENEDIT_TOOLBAR_PLANT_TREES                                :{BLACK} درخت لگایئے
+STR_SCENEDIT_TOOLBAR_PLACE_SIGN                                 :{BLACK} اشارھ لگایئے
+
+############ range for SE file menu starts
+STR_SCENEDIT_FILE_MENU_SAVE_SCENARIO                            :منظر بچایئے
+STR_SCENEDIT_FILE_MENU_LOAD_SCENARIO                            :منظر کھولیئے
+STR_SCENEDIT_FILE_MENU_LOAD_HEIGHTMAP                           :اونچائی کا نقشہ دکھائو
+STR_SCENEDIT_FILE_MENU_QUIT_EDITOR                              :مدیر بند کیجیئے
+STR_SCENEDIT_FILE_MENU_SEPARATOR                                :
+STR_SCENEDIT_FILE_MENU_QUIT                                     :باہر نکلو
+############ range for SE file menu starts
+
+############ range for settings menu starts
+STR_SETTINGS_MENU_GAME_OPTIONS                                  :کھیل کے اختیارات
+STR_SETTINGS_MENU_DIFFICULTY_SETTINGS                           :مشکلات چنئے
+STR_SETTINGS_MENU_CONFIG_SETTINGS                               :اعلی اختیارات
+STR_SETTINGS_MENU_NEWGRF_SETTINGS                               :NewGRF اختیارات
+STR_SETTINGS_MENU_TRANSPARENCY_OPTIONS                          :Transparency کے اختیارات
+STR_SETTINGS_MENU_TOWN_NAMES_DISPLAYED                          :آبادیوں کے نام دکھائے جائیں
+STR_SETTINGS_MENU_STATION_NAMES_DISPLAYED                       :اڈوں کے نام دکھائے جائیں
+STR_SETTINGS_MENU_WAYPOINTS_DISPLAYED                           :راھ شناس نقتوں کے نام دکھائے جایئں
+STR_SETTINGS_MENU_SIGNS_DISPLAYED                               :اشارے دکھائے جائیں
+STR_SETTINGS_MENU_FULL_ANIMATION                                :مکمل animation
+STR_SETTINGS_MENU_FULL_DETAIL                                   :مکمل تفصیل
+STR_SETTINGS_MENU_TRANSPARENT_BUILDINGS                         :شفاف عمارات
+STR_SETTINGS_MENU_TRANSPARENT_SIGNS                             :شفاف اسٹیشن کے اشارے
+############ range ends here
+
+############ range for file menu starts
+STR_FILE_MENU_SAVE_GAME                                         :کھیل محفوظ کرو
+STR_FILE_MENU_LOAD_GAME                                         :کھیل دوبارہ چڑھاو
+STR_FILE_MENU_QUIT_GAME                                         :کھیل چھوڑ دو
+STR_FILE_MENU_EXIT                                              :باہر نکلو
+############ range ends here
+
+############ range for map menu starts
+STR_MAP_MENU_MAP_OF_WORLD                                       :دنیا کا نقشھ
+STR_MAP_MENU_EXTRA_VIEW_PORT                                    :اضافی منظر
+STR_MAP_MENU_SIGN_LIST                                          :اشاروں کی فھرست
+############ range for town menu starts, yet the town directory is shown in the map menu in the scenario editor
+STR_TOWN_MENU_TOWN_DIRECTORY                                    :کتبِ قصبھ جات
+############ end of the 'Display map' dropdown
+STR_TOWN_MENU_FOUND_TOWN                                        :قصبھ قائم کیجیئے
+############ end of the 'Town' dropdown
+
+############ range for subsidies menu starts
+STR_SUBSIDIES_MENU_SUBSIDIES                                    :امداد
+############ range ends here
+
+############ range for graph menu starts
+STR_GRAPH_MENU_OPERATING_PROFIT_GRAPH                           :عملی منافع مخطط
+STR_GRAPH_MENU_INCOME_GRAPH                                     :آمدنی مخطط
+STR_GRAPH_MENU_DELIVERED_CARGO_GRAPH                            :پھنچائے گئے سامان کا مخطط
+STR_GRAPH_MENU_PERFORMANCE_HISTORY_GRAPH                        :عملی تاریخ مخطط
+STR_GRAPH_MENU_COMPANY_VALUE_GRAPH                              :کمپنی کی قیمت مخطط
+STR_GRAPH_MENU_CARGO_PAYMENT_RATES                              :سامان کی ادایگی کا تناسب
+############ range ends here
+
+############ range for company league menu starts
+############ range ends here
+
+############ range for industry menu starts
+STR_INDUSTRY_MENU_INDUSTRY_DIRECTORY                            :کتبِ صنعت
+STR_INDUSTRY_MENU_FUND_NEW_INDUSTRY                             :نئ سنعت تعمیر کیجیئے
+############ range ends here
+
+############ range for railway construction menu starts
+STR_RAIL_MENU_RAILROAD_CONSTRUCTION                             :راھ آھن پٹری کی تعمیر
+STR_RAIL_MENU_ELRAIL_CONSTRUCTION                               :برقی راھ آھن پٹری کی تعمیر
+STR_RAIL_MENU_MONORAIL_CONSTRUCTION                             :وحید راھ کی تعمیر
+STR_RAIL_MENU_MAGLEV_CONSTRUCTION                               :علناظیس کی تعمیر
+############ range ends here
+
+############ range for road construction menu starts
+STR_ROAD_MENU_ROAD_CONSTRUCTION                                 :سڑک کی تعمیر
+STR_ROAD_MENU_TRAM_CONSTRUCTION                                 :ٹرام وے کی تعمیر
+############ range ends here
+
+############ range for waterways construction menu starts
+STR_WATERWAYS_MENU_WATERWAYS_CONSTRUCTION                       :نھر کی تعمیر
+############ range ends here
+
+############ range for airport construction menu starts
+STR_AIRCRAFT_MENU_AIRPORT_CONSTRUCTION                          :ھواگاھ کی تعمیر
+############ range ends here
+
+############ range for landscaping menu starts
+STR_LANDSCAPING_MENU_LANDSCAPING                                :منظر کشی
+STR_LANDSCAPING_MENU_PLANT_TREES                                :درخت لگایئے
+STR_LANDSCAPING_MENU_PLACE_SIGN                                 :اشارھ لگایے
+############ range ends here
+
+############ range for music menu starts
+STR_TOOLBAR_SOUND_MUSIC                                         :آواز و موسیقی
+############ range ends here
+
+############ range for message menu starts
+STR_NEWS_MENU_LAST_MESSAGE_NEWS_REPORT                          :پچھلا پیعام/ خبر
+STR_NEWS_MENU_MESSAGE_SETTINGS                                  :اختیاراتِ پعغام
+STR_NEWS_MENU_MESSAGE_HISTORY_MENU                              :تاریخِ پیغامات
+############ range ends here
+
+############ range for about menu starts
+STR_ABOUT_MENU_LAND_BLOCK_INFO                                  :زمینی رقبہ کی معلومات
+STR_ABOUT_MENU_TOGGLE_CONSOLE                                   :حائطھ تدویم
+STR_ABOUT_MENU_AI_DEBUG                                         :AI debug
+STR_ABOUT_MENU_SCREENSHOT                                       :اسکرین کی تصویر
+STR_ABOUT_MENU_GIANT_SCREENSHOT                                 :پورے نقشے کی اسکرین کی تصویر
+STR_ABOUT_MENU_ABOUT_OPENTTD                                    :Open TTD کے بارے میں
+STR_ABOUT_MENU_SPRITE_ALIGNER                                   :sprite صف بندھ
+############ range ends here
+
+############ range for days starts (also used for the place in the highscore window)
+STR_ORDINAL_NUMBER_1ST                                          :پھل
+STR_ORDINAL_NUMBER_2ND                                          :دوسر
+STR_ORDINAL_NUMBER_3RD                                          :تیسر
+STR_ORDINAL_NUMBER_4TH                                          :چوتھ
+STR_ORDINAL_NUMBER_5TH                                          :پانچھو
+STR_ORDINAL_NUMBER_6TH                                          :چھٹ
+STR_ORDINAL_NUMBER_7TH                                          :ساتو
+STR_ORDINAL_NUMBER_8TH                                          :آٹھو
+STR_ORDINAL_NUMBER_9TH                                          :نو
+STR_ORDINAL_NUMBER_10TH                                         :دسو
+STR_ORDINAL_NUMBER_11TH                                         :گیارھو
+STR_ORDINAL_NUMBER_12TH                                         :بارھو
+STR_ORDINAL_NUMBER_13TH                                         :تیرھو
+STR_ORDINAL_NUMBER_14TH                                         :چودھو
+STR_ORDINAL_NUMBER_15TH                                         :پندھرو
+STR_ORDINAL_NUMBER_16TH                                         :سولھو
+STR_ORDINAL_NUMBER_17TH                                         :سترھو
+STR_ORDINAL_NUMBER_18TH                                         :اٹھارو
+STR_ORDINAL_NUMBER_19TH                                         :انیسو
+STR_ORDINAL_NUMBER_20TH                                         :بیسو
+STR_ORDINAL_NUMBER_21ST                                         :اکیسو
+STR_ORDINAL_NUMBER_22ND                                         :بایئسو
+STR_ORDINAL_NUMBER_23RD                                         :تیئسو
+STR_ORDINAL_NUMBER_24TH                                         :چوبیسو
+STR_ORDINAL_NUMBER_25TH                                         :پچیسو
+STR_ORDINAL_NUMBER_26TH                                         :چھبیسو
+STR_ORDINAL_NUMBER_27TH                                         :ستایئسو
+STR_ORDINAL_NUMBER_28TH                                         :اٹھایئسو
+STR_ORDINAL_NUMBER_29TH                                         :انتیسو
+STR_ORDINAL_NUMBER_30TH                                         :تیسو
+STR_ORDINAL_NUMBER_31ST                                         :اکتیسو
+############ range for days ends
+
+############ range for months starts
+STR_MONTH_ABBREV_JAN                                            :جنوری
+STR_MONTH_ABBREV_FEB                                            :فروری
+STR_MONTH_ABBREV_MAR                                            :مارچ
+STR_MONTH_ABBREV_APR                                            :اپریل
+STR_MONTH_ABBREV_MAY                                            :مئی
+STR_MONTH_ABBREV_JUN                                            :جون
+STR_MONTH_ABBREV_JUL                                            :جولائی
+STR_MONTH_ABBREV_AUG                                            :اگست
+STR_MONTH_ABBREV_SEP                                            :ستمبر
+STR_MONTH_ABBREV_OCT                                            :اکتوبر
+STR_MONTH_ABBREV_NOV                                            :نومبر
+STR_MONTH_ABBREV_DEC                                            :دسمبر
+
+STR_MONTH_JAN                                                   :جنوری
+STR_MONTH_FEB                                                   :فروری
+STR_MONTH_MAR                                                   :مارچ
+STR_MONTH_APR                                                   :اپریل
+STR_MONTH_MAY                                                   :مئی
+STR_MONTH_JUN                                                   :جون
+STR_MONTH_JUL                                                   :جولائی
+STR_MONTH_AUG                                                   :اگست
+STR_MONTH_SEP                                                   :ستمبر
+STR_MONTH_OCT                                                   :اکتوبر
+STR_MONTH_NOV                                                   :نومبر
+STR_MONTH_DEC                                                   :دسمبر
+############ range for months ends
+
+# Graph window
+STR_GRAPH_KEY_BUTTON                                            :{BLACK} کلید
+STR_GRAPH_X_LABEL_MONTH                                         :{TINYFONT}{STRING}{} {STRING}
+STR_GRAPH_X_LABEL_MONTH_YEAR                                    :{TINYFONT}{STRING}{} {STRING}{}{NUM}
+STR_GRAPH_Y_LABEL                                               :{TINYFONT}{STRING}
+STR_GRAPH_Y_LABEL_NUMBER                                        :{TINYFONT}{COMMA}
+
+STR_GRAPH_OPERATING_PROFIT_CAPTION                              :{WHITE} عملی منافع مخطط
+STR_GRAPH_INCOME_CAPTION                                        :{WHITE} آمدنی مخطط
+STR_GRAPH_CARGO_DELIVERED_CAPTION                               :{WHITE} شمار سامان پھنچایا گیا
+STR_GRAPH_COMPANY_PERFORMANCE_RATINGS_CAPTION                   :{WHITE} کمپنی کی کارکردگی کی درج بندی (حدِ درجھ = 1000)
+
+STR_GRAPH_CARGO_PAYMENT_RATES_CAPTION                           :{WHITE} سامان کی ادایگی کا تناسب
+STR_GRAPH_CARGO_PAYMENT_RATES_X_LABEL                           :{TINYFONT}{BLACK} حرکت میں ایام
+STR_GRAPH_CARGO_PAYMENT_RATES_TITLE                             :{TINYFONT}{BLACK} سامان کی دس اکائیات (یآ 10،000 لیٹر)، 20 چکور تک لے جانے کی ادائیگی
+STR_GRAPH_CARGO_ENABLE_ALL                                      :{TINYFONT} {BLACK} سب کو قابل کیجیئے
+STR_GRAPH_CARGO_DISABLE_ALL                                     :{TINYFONT} {BLACK} سب کو نا کارہ کیجیئے
+STR_GRAPH_CARGO_TOOLTIP_ENABLE_ALL                              :{BLACK} سامان کی ادائیگی کے مخطط پر تمام سامان دیکھئہے
+STR_GRAPH_CARGO_TOOLTIP_DISABLE_ALL                             :{BLACK} سامان کی ادائیگی کے مخطط پر کوئ بھی سامان نا دیکھئہے
+STR_GRAPH_CARGO_PAYMENT_TOGGLE_CARGO                            :{BLACK} ظرزِ سامان مخطط تدویم کیجئیے
+STR_GRAPH_CARGO_PAYMENT_CARGO                                   :{TINYFONT}{BLACK}{STRING}
+
+STR_GRAPH_PERFORMANCE_DETAIL_TOOLTIP                            :{BLACK} کارکردگی کی تفصیلی درجہ بندی دکھائیے
+
+# Graph key window
+STR_GRAPH_KEY_COMPANY_SELECTION_TOOLTIP                         :{BLACK} مخطط پر کمپنی کی تفصیلات کو تدویم کیجئیے
+
+# Company league window
+STR_COMPANY_LEAGUE_COMPANY_NAME                                 :{ORANGE}{COMPANY} {BLACK}{COMPANYNUM} '{STRING}'
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_ENGINEER                   :مہندس
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_TRAFFIC_MANAGER            :ٹریفک ناظم
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_TRANSPORT_COORDINATOR      :مواصلاتی رابط
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_ROUTE_SUPERVISOR           :نگرانِ راہ
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_DIRECTOR                   :ناظم
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_CHIEF_EXECUTIVE            :صدر انتظامی
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_CHAIRMAN                   :صدر
+STR_COMPANY_LEAGUE_PERFORMANCE_TITLE_PRESIDENT                  :صدر
+
+# Performance detail window
+STR_PERFORMANCE_DETAIL                                          :{WHITE} تفصیلی عملی درجہ بندی
+STR_PERFORMANCE_DETAIL_KEY                                      :{BLACK} تفصیل
+STR_PERFORMANCE_DETAIL_AMOUNT_CURRENCY                          :{BLACK}({CURRCOMPACT}/{CURRCOMPACT})
+STR_PERFORMANCE_DETAIL_AMOUNT_INT                               :{BLACK}({COMMA}/{COMMA})
+STR_PERFORMANCE_DETAIL_PERCENT                                  :{WHITE}{NUM}%
+############ Those following lines need to be in this order!!
+STR_PERFORMANCE_DETAIL_VEHICLES                                 :{BLACK} ناوقلات:
+STR_PERFORMANCE_DETAIL_STATIONS                                 :{BLACK} اسٹیشن:
+STR_PERFORMANCE_DETAIL_MIN_PROFIT                               :{BLACK} کم سے کم منافع:
+STR_PERFORMANCE_DETAIL_MIN_INCOME                               :{BLACK} کم سے کم آمدنی:
+STR_PERFORMANCE_DETAIL_MAX_INCOME                               :{BLACK} حدِ غایت آمدنی:
+STR_PERFORMANCE_DETAIL_DELIVERED                                :{BLACK} پھنچا دی گئی:
+STR_PERFORMANCE_DETAIL_CARGO                                    :{BLACK} سامان:
+STR_PERFORMANCE_DETAIL_MONEY                                    :{BLACK} رقم:
+STR_PERFORMANCE_DETAIL_LOAN                                     :{BLACK} قرضہ:
+STR_PERFORMANCE_DETAIL_TOTAL                                    :{BLACK} مکمل:
+############ End of order list
+STR_PERFORMANCE_DETAIL_VEHICLES_TOOLTIP                         :{BLACK} پچھلے سال نفعدار ناقل کی تعداد؛ جس میں گاڑیاں، قطار، بحری جہاز، ہوائی جہاز وغعرہ شامل ہیں
+STR_PERFORMANCE_DETAIL_STATIONS_TOOLTIP                         :{BLACK} تعداد برائے حالیہ مرمت شدہ مستقر حصے۔ مستقر کا ہر حصہ گنا جاتا ہے۔ مثلا پٹری مستقر، بس اسٹاپ، ہوائی اڈہ وغیرہ، خواہ وہ ایک ساتھ جڑے بھی ہوں۔
+
+# Music window
+
+
+# Playlist window
+
+# Highscore window
+
+# Smallmap window
+
+STR_SMALLMAP_TYPE_VEHICLES                                      :سواریاں
+STR_SMALLMAP_TYPE_INDUSTRIES                                    :صنعتیں
+STR_SMALLMAP_TYPE_ROUTES                                        :راستے
+STR_SMALLMAP_TYPE_VEGETATION                                    :سبزہ
+STR_SMALLMAP_TYPE_OWNERS                                        :مالکین
+
+STR_SMALLMAP_LEGENDA_ROADS                                      :{TINYFONT}{BLACK}سڑکیں
+STR_SMALLMAP_LEGENDA_STATIONS_AIRPORTS_DOCKS                    :{TINYFONT}{BLACK}اڈے/ہوایی اڈے/بندرگاہیں
+STR_SMALLMAP_LEGENDA_BUILDINGS_INDUSTRIES                       :{TINYFONT}{BLACK}عمارتیں/صنعتیں
+STR_SMALLMAP_LEGENDA_VEHICLES                                   :{TINYFONT}{BLACK}سواریاں
+STR_SMALLMAP_LEGENDA_TRAINS                                     :{TINYFONT}{BLACK}ریل گاڑیاں
+STR_SMALLMAP_LEGENDA_ROAD_VEHICLES                              :{TINYFONT}{BLACK}سڑک کی گاڑیاں
+STR_SMALLMAP_LEGENDA_SHIPS                                      :{TINYFONT}{BLACK}کشتیاں
+STR_SMALLMAP_LEGENDA_AIRCRAFT                                   :{TINYFONT}{BLACK}ہوایی جہاز
+STR_SMALLMAP_LEGENDA_TRANSPORT_ROUTES                           :{TINYFONT}{BLACK}مواصلاتی راستے
+STR_SMALLMAP_LEGENDA_FOREST                                     :{TINYFONT}{BLACK}جنگل
+
+
+# Status bar messages
+STR_STATUSBAR_TOOLTIP_SHOW_LAST_NEWS                            :{BLACK}آخری پیغام یا خبر دکھائو
+STR_STATUSBAR_COMPANY_NAME                                      :{SILVER}- -  {COMPANY}  - -
+
+# News message history
+STR_MESSAGE_NEWS_FORMAT                                         :{STRING}  -  {STRING}
+
+# Message settings window
+STR_NEWS_MESSAGES_OFF                                           :بند
+STR_NEWS_MESSAGES_SUMMARY                                       :خلاصہ
+STR_NEWS_MESSAGES_FULL                                          :مکمل
+
+
+
+
+
+
+
+
+
+
+
+
+# Start of order review system
+# DON'T ADD OR REMOVE LINES HERE
+# end of order system
+
+
+
+
+
+
+
+# Extra view window
+
+# Game options window
+
+############ start of currency region
+############ end of currency region
+
+
+############ start of measuring units region
+############ end of measuring units region
+
+
+
+############ start of townname region
+############ end of townname region
+
+
+
+
+
+STR_GAME_OPTIONS_RESOLUTION_OTHER                               :دیگر
+
+
+
+
+
+
+# Custom currency window
+
+
+
+
+
+
+# Difficulty level window
+
+############ range for difficulty levels starts
+############ range for difficulty levels ends
+
+
+############ range for difficulty settings starts
+############ range for difficulty settings ends
+
+STR_MINIMAL                                                     :کم از کم
+
+
+
+
+
+STR_SUBSIDY_X1_5                                                :x1.5
+STR_SUBSIDY_X2                                                  :x2
+STR_SUBSIDY_X3                                                  :x3
+STR_SUBSIDY_X4                                                  :x4
+
+
+
+
+
+
+# Advanced settings window
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Intro window
+
+STR_INTRO_PLAY_HEIGHTMAP                                        :{BLACK}اونچائی کے نقشے کو کھیلو
+
+
+STR_INTRO_TOOLTIP_PLAY_HEIGHTMAP                                :{BLACK}ایک نیا کھیل شروع کرو، اونچائی کے نقشے کو زمین بنا کر
+
+
+
+# Quit window
+STR_QUIT_CAPTION                                                :{WHITE}باہر نکلو
+STR_QUIT_YES                                                    :{BLACK}ہاں
+STR_QUIT_NO                                                     :{BLACK}نہیں
+
+# Supported OSes
+
+# Abandon game
+STR_ABANDON_GAME_CAPTION                                        :{WHITE}کھیل چھوڑ دو
+STR_ABANDON_GAME_QUERY                                          :{YELLOW}کیا آپ کو یقین ہے کہ آپ اس کھیل کو چھوڑنا چاہ رہے ہیں؟
+
+# Cheat window
+
+# Livery window
+
+
+
+# Face selection window
+
+
+# Network server list
+
+
+
+
+
+
+
+# Start new multiplayer server
+
+
+
+
+# Network game languages
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+
+# Network game lobby
+
+
+
+
+
+# Network connecting window
+
+############ Leave those lines in this order!!
+
+############ End of leave-in-this-order
+
+
+
+# Network company list added strings
+
+# Network client list
+
+
+
+# Network set password
+
+# Network company info join/password
+
+# Network chat
+
+
+# Network messages
+
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+
+
+# Network related errors
+############ Leave those lines in this order!!
+############ End of leave-in-this-order
+
+# Content downloading window
+
+# Order of these is important!
+
+# Content downloading progress window
+
+# Content downloading error messages
+
+# Transparency settings window
+
+# Base for station construction window(s)
+STR_STATION_BUILD_ACCEPTS_CARGO                                 :{GOLD}{STRING}{BLACK}منظور کرتا ہے:
+STR_STATION_BUILD_SUPPLIES_CARGO                                :{GOLD}{STRING}{BLACK}فراہم کرتا ہے:
+
+# Join station window
+
+
+# Rail construction toolbar
+
+
+# Rail depot construction window
+
+# Rail waypoint construction window
+
+# Rail station construction window
+
+
+
+# Signal window
+
+# Bridge selection window
+
+
+# Road construction toolbar
+
+# Road depot construction window
+
+# Road vehicle station construction window
+
+# Waterways toolbar (last two for SE only)
+STR_WATERWAYS_TOOLBAR_CREATE_RIVER_TOOLTIP                      :{BLACK}دریا رکھو.
+
+# Ship depot construction window
+
+# Dock construction window
+
+# Airport toolbar
+
+# Airport construction window
+
+
+
+
+# Landscaping toolbar
+STR_LANDSCAPING_TOOLTIP_LOWER_A_CORNER_OF_LAND                  :{BLACK}زمین کا ایک کنارہ نیچے کرو
+STR_LANDSCAPING_TOOLTIP_RAISE_A_CORNER_OF_LAND                  :{BLACK}زمین کا ایک کنارہ اونچا کرو
+
+# Object construction window
+
+
+# Tree planting window (last two for SE only)
+
+# Land generation window (SE)
+
+
+# Town generation window (SE)
+
+
+STR_FOUND_TOWN_INITIAL_SIZE_TITLE                               :{YELLOW}شہر کا حجم:
+STR_FOUND_TOWN_INITIAL_SIZE_SMALL_BUTTON                        :{G=m}{BLACK}چھوٹا
+STR_FOUND_TOWN_INITIAL_SIZE_MEDIUM_BUTTON                       :{G=m}{BLACK}درمیانہ
+STR_FOUND_TOWN_INITIAL_SIZE_LARGE_BUTTON                        :{G=m}{BLACK}بڑا
+STR_FOUND_TOWN_SIZE_RANDOM                                      :{G=m}{BLACK}کوئی سا
+STR_FOUND_TOWN_INITIAL_SIZE_TOOLTIP                             :{BLACK}شہر کا حجم منتخب کرو
+STR_FOUND_TOWN_CITY                                             :{BLACK}شہر
+
+STR_FOUND_TOWN_ROAD_LAYOUT                                      :{YELLOW}شہر کی سڑکوں کا پھیلائو:
+STR_FOUND_TOWN_SELECT_TOWN_ROAD_LAYOUT                          :{BLACK}اس شہر کیلئے سڑکوں کا بھیلائو منتخب کرو
+STR_FOUND_TOWN_SELECT_LAYOUT_ORIGINAL                           :{BLACK}اصلی
+STR_FOUND_TOWN_SELECT_LAYOUT_BETTER_ROADS                       :{BLACK}بہتر سڑکیں
+STR_FOUND_TOWN_SELECT_LAYOUT_RANDOM                             :{G=f}{BLACK}کوئٰ سی
+
+# Fund new industry window
+
+# Industry cargoes window
+
+# Land area window
+
+# Description of land area of different tiles
+
+
+
+# Houses come directly from their building names
+
+
+
+
+# Industries come directly from their industry names
+
+
+
+
+
+
+# About OpenTTD window
+STR_ABOUT_OPENTTD                                               :{WHITE}اوپن ٹی ٹی ڈی کے متعلق
+
+# Save/load game/scenario
+
+
+# World generation
+
+# Strings for map borders at game generation
+
+
+
+# SE Map generation
+
+
+# Map generation progress
+
+# NewGRF settings
+STR_NEWGRF_SETTINGS_INFO_TITLE                                  :{WHITE} تفصیلی NewGRF معلومات
+STR_NEWGRF_SETTINGS_ACTIVE_LIST                                 :{WHITE} متحرک NewGRF فائلیں
+STR_NEWGRF_SETTINGS_INACTIVE_LIST                               :{WHITE} غیر متحرک NewGRF فائلیں
+STR_NEWGRF_SETTINGS_ADD_FILE_TOOLTIP                            :{BLACK} منتخب NewGRF فائل اپنے configuration میں شامل کیجئے
+STR_NEWGRF_SETTINGS_RESCAN_FILES                                :{BLACK} فائلوں کو دوبارھ اسکین کیجئے
+STR_NEWGRF_SETTINGS_RESCAN_FILES_TOOLTIP                        :{BLACK} نئی دستیاب NewGRF فائلوں کی فھرست حاصل کیجئے
+
+
+
+
+
+
+# NewGRF parameters window
+
+# NewGRF inspect window
+STR_NEWGRF_INSPECT_CAPTION                                      :{WHITE} معایِئنھ کیجیئے - {STRING}
+
+STR_NEWGRF_INSPECT_CAPTION_OBJECT_AT                            :{STRING} پر {HEX}
+STR_NEWGRF_INSPECT_CAPTION_OBJECT_AT_RAIL_TYPE                  :طرزِ ریل
+
+
+# Sprite aligner window
+STR_SPRITE_ALIGNER_CAPTION                                      :{WHITE} صف بندھی کے sprite {COMMA} ({STRING})
+STR_SPRITE_ALIGNER_NEXT_BUTTON                                  :{BLACK} اگلی sprite
+STR_SPRITE_ALIGNER_GOTO_BUTTON                                  :{BLACK} جایئے sprite تک
+STR_SPRITE_ALIGNER_GOTO_TOOLTIP                                 :{BLACK} جایئے sprite کی طرف۔ اگر sprite اصلی نھیں تو اگلی sprite کی طرف جائیے
+STR_SPRITE_ALIGNER_PREVIOUS_BUTTON                              :{BLACK} پچھلا sprite
+STR_SPRITE_ALIGNER_SPRITE_TOOLTIP                               :{BLACK} منتخب sprite کا اظھار۔ اس sprite کے نقش میں سف بندی نظر اندازکی جائے گی۔
+STR_SPRITE_ALIGNER_MOVE_TOOLTIP                                 :{BLACK} ارد گرد sprite ھلایئے، X اور Y offset تبدیل کیجئے
+STR_SPRITE_ALIGNER_PICKER_BUTTON                                :{BLACK} منتخب sprite کیجئے
+STR_SPRITE_ALIGNER_PICKER_TOOLTIP                               :{BLACK} اسکرین سے کسی sprite کو منتخب کیجئے
+
+STR_SPRITE_ALIGNER_GOTO_CAPTION                                 :{WHITE} جایئے sprite تک
+
+# NewGRF (self) generated warnings/errors
+
+# NewGRF related 'general' warnings
+
+
+
+# NewGRF status
+
+# NewGRF 'it's broken' warnings
+
+
+# 'User removed essential NewGRFs'-placeholders for stuff without specs
+STR_NEWGRF_INVALID_CARGO                                        :<غلط سامان>
+STR_NEWGRF_INVALID_CARGO_QUANTITY                               :<غلط سامان> کا {COMMA}
+STR_NEWGRF_INVALID_ENGINE                                       :<غلط انجن ماڈل>
+STR_NEWGRF_INVALID_INDUSTRYTYPE                                 :<غلط صنعت>
+
+# Sign list window
+STR_SIGN_LIST_CAPTION                                           :{WHITE} فھرستِ اشارھ - {COMMA} اشار{P ھ ے}
+
+# Sign window
+STR_EDIT_SIGN_CAPTION                                           :{WHITE} اشارے کے الفاظ تبدیل کیجیئے
+STR_EDIT_SIGN_NEXT_SIGN_TOOLTIP                                 :{BLACK} اگلے اشارے تک جایئے
+STR_EDIT_SIGN_PREVIOUS_SIGN_TOOLTIP                             :{BLACK} پچھلے اشارے تک جایئے
+
+STR_EDIT_SIGN_SIGN_OSKTITLE                                     :{BLACK} اشارے کا نام درج کیجیئے
+
+# Town directory window
+STR_TOWN_DIRECTORY_CAPTION                                      :{WHITE} قصبے
+
+# Town view window
+
+STR_TOWN_VIEW_DELETE_BUTTON                                     :{BLACK}مٹائو
+STR_TOWN_VIEW_DELETE_TOOLTIP                                    :{BLACK}اس شہر کو پورا مٹا دو
+
+
+# Town local authority window
+
+
+
+# Subsidies window
+
+# Station list window
+STR_STATION_LIST_SELECT_ALL_FACILITIES                          :{BLACK}تمام سہولتوں کا انتخاب کرو
+STR_STATION_LIST_SELECT_ALL_TYPES                               :{BLACK}تمام قسم کے سامان کا انتخاب کرو (بشمول غیر منتظر سامان کے)
+STR_STATION_LIST_NO_WAITING_CARGO                               :{BLACK}کسی قسم کا کویی سامان انتظار نہیں کر رہا ہے
+
+# Station view window
+STR_STATION_VIEW_WAITING_TITLE                                  :{BLACK}منتظر: {WHITE}{STRING}
+STR_STATION_VIEW_WAITING_CARGO                                  :{WHITE}{CARGO}
+STR_STATION_VIEW_EN_ROUTE_FROM                                  :{YELLOW}({SHORTCARGO} سے براستہ ہے {STATION})
+
+STR_STATION_VIEW_ACCEPTS_CARGO                                  :{BLACK}منظور کرتا ہے: {WHITE}{STRING}
+
+
+############ range for rating starts
+############ range for rating ends
+
+
+
+
+# Waypoint/buoy view window
+
+
+# Finances window
+
+# Company view
+
+
+
+
+
+
+
+# Industry directory
+
+# Industry view
+
+############ range for requires starts
+############ range for requires ends
+
+############ range for produces starts
+############ range for produces ends
+
+
+# Vehicle lists
+
+
+
+STR_VEHICLE_LIST_AVAILABLE_TRAINS                               :دستیاب ریل گاڑیاں
+STR_VEHICLE_LIST_AVAILABLE_ROAD_VEHICLES                        :دستیاب گاڑیاں
+STR_VEHICLE_LIST_AVAILABLE_SHIPS                                :دستیاب کشتیاں
+STR_VEHICLE_LIST_AVAILABLE_AIRCRAFT                             :دستیاب ہوایی جہاز
+STR_VEHICLE_LIST_AVAILABLE_ENGINES_TOOLTIP                      :{BLACK}اس قسم کی گاڑیوں کےلیے دستیاب انجنوں کی فہرست دیکھو
+
+STR_VEHICLE_LIST_MANAGE_LIST                                    :{BLACK}فہرست کا انتظام کرو
+
+
+
+
+# Group window
+
+
+
+
+
+# Build vehicle window
+
+
+
+
+
+
+
+
+
+# Depot window
+STR_DEPOT_CAPTION                                               :{WHITE}{DEPOT}
+
+STR_DEPOT_RENAME_TOOLTIP                                        :{BLACK} ڈیپو کا نام تبدیل کیجئے
+STR_DEPOT_RENAME_DEPOT_CAPTION                                  :ڈیپو کا نام تبدیل کیجئے
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Engine preview window
+
+
+# Autoreplace window
+
+
+
+
+
+
+# Vehicle view
+
+
+
+
+
+
+
+
+
+
+# Messages in the start stop button in the vehicle view
+
+STR_VEHICLE_STATUS_HEADING_FOR_DEPOT_VEL                        :{ORANGE} روانگی {DEPOT} کی طرف، {VELOCITY}
+STR_VEHICLE_STATUS_HEADING_FOR_DEPOT_SERVICE_VEL                :{LTBLUE} {DEPOT} پر خدمات، {VELOCITY}
+
+# Vehicle stopped/started animations
+STR_VEHICLE_COMMAND_STOPPED_SMALL                               :{TINYFONT}{RED} روک دیا گیا
+STR_VEHICLE_COMMAND_STOPPED                                     :{RED} روک دیا گیا
+STR_VEHICLE_COMMAND_STARTED_SMALL                               :{TINYFONT}{GREEN} شروع کر دیا گیا
+STR_VEHICLE_COMMAND_STARTED                                     :{GREEN} شروع کر دیا گیا
+
+# Vehicle details
+
+
+# The next two need to stay in this order
+
+
+
+
+
+
+
+# Extra buttons for train details windows
+
+
+
+
+
+# Vehicle refit
+
+
+
+
+# Order view
+
+
+
+# Order bottom buttons
+
+
+
+
+
+
+
+
+
+
+
+
+# String parts to build the order string
+
+
+
+
+
+
+
+
+
+
+# Time table window
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Date window (for timetable)
+
+
+# AI debug window
+STR_AI_DEBUG_CONTINUE                                           :{BLACK} جاری کیجیئے
+STR_AI_DEBUG_CONTINUE_TOOLTIP                                   :{BLACK} وقفھ منقطع اور AI کو جاری کیجیئے
+
+
+
+# AI configuration window
+
+
+
+# Available AIs window
+
+
+
+# AI Parameters
+
+# Vehicle loading indicators
+
+# Income 'floats'
+
+# Saveload messages
+
+# Map generation messages
+
+
+
+
+# Soundset messages
+
+# Screenshot related messages
+
+# Error message titles
+
+# Generic construction errors
+STR_ERROR_OFF_EDGE_OF_MAP                                       :{WHITE}نقشے کے کنارے سے باہر
+STR_ERROR_TOO_CLOSE_TO_EDGE_OF_MAP                              :{WHITE}نقشے کے کنارے سے زیادہ قریب
+STR_ERROR_NOT_ENOUGH_CASH_REQUIRES_CURRENCY                     :{WHITE}ناکافی پیسہ - {CURRENCY} مزید چاہیے
+STR_ERROR_FLAT_LAND_REQUIRED                                    :{WHITE}ہموار زمین چاہیے
+STR_ERROR_CAN_T_DO_THIS                                         :{WHITE}یہ نہیں کر سکتا۔۔۔
+STR_ERROR_BUILDING_MUST_BE_DEMOLISHED                           :{WHITE} عمارت کو پھلے گرانا ھو گا
+STR_ERROR_CAN_T_CLEAR_THIS_AREA                                 :{WHITE}یہ جگہ صاف نہیں کر سکتا۔۔۔
+STR_ERROR_SITE_UNSUITABLE                                       :{WHITE}۔۔۔جگھ غیرمناسب
+STR_ERROR_ALREADY_BUILT                                         :{WHITE}...تعمیرات مکمل یا جاری ھیں
+STR_ERROR_OWNED_BY                                              :{WHITE}۔۔۔ یھ {STRING} کی ملکیت ھے
+STR_ERROR_AREA_IS_OWNED_BY_ANOTHER                              :{WHITE}۔۔۔ رقبھ کسی اور کمپنی کی ملکیت ھے
+STR_ERROR_NAME_MUST_BE_UNIQUE                                   :{WHITE} نام منفرد ھونا چاھیے
+STR_ERROR_GENERIC_OBJECT_IN_THE_WAY                             :{WHITE}{1:STRING} راستے میں ھے
+
+# Local authority errors
+STR_ERROR_LOCAL_AUTHORITY_REFUSES_TO_ALLOW_THIS                 :{WHITE}{TOWN} مقامی حکومت اس کی اجازت نھیں دیتی
+STR_ERROR_LOCAL_AUTHORITY_REFUSES_AIRPORT                       :{WHITE}{TOWN} مقامی حکومت اضافی ھوائی اڈے تعمیر کرنے کی اجازت نھیں دیتی
+
+# Levelling errors
+
+# Company related errors
+
+
+# Town related errors
+
+# Industry related errors
+STR_ERROR_CAN_ONLY_BE_BUILT_IN_TOWNS_WITH_POPULATION_OF_1200    :{G=m}{WHITE}... صرف ان شہروں میں بن سکتا ہے جن کی آبادی ۱۲۰۰ سے زیادہ ہے
+
+# Station construction related errors
+
+
+# Station destruction related errors
+
+
+# Waypoint related errors
+
+
+
+# Depot related errors
+
+STR_ERROR_CAN_T_RENAME_DEPOT                                    :{WHITE} ڈیپو کا نام تبدیل نھیں کیا جا سکتا۔۔۔
+
+
+
+
+
+# Autoreplace related errors
+
+# Rail construction errors
+
+
+# Road construction errors
+
+# Waterway construction errors
+
+# Tree related errors
+STR_ERROR_TREE_WRONG_TERRAIN_FOR_TREE_TYPE                      :{WHITE} ۔۔۔ طرزِ پیڑ کے لیئے غلط طرزِ زپین
+
+# Bridge related errors
+STR_ERROR_ENDS_OF_BRIDGE_MUST_BOTH                              :{WHITE}... پل کے دونوں کنارے زمین پر ہونے چاہییں
+STR_ERROR_BRIDGE_TOO_LONG                                       :{WHITE} ۔۔۔ پل زیادھ لمبی ھے
+
+# Tunnel related errors
+STR_ERROR_CAN_T_BUILD_TUNNEL_HERE                               :{WHITE}یہاں سورنگ نہئ بنا سکتے
+STR_ERROR_SITE_UNSUITABLE_FOR_TUNNEL                            :{WHITE}سورنگ یہاں سے شروع نہئں کر سکتے
+STR_ERROR_MUST_DEMOLISH_TUNNEL_FIRST                            :{WHITE}پہلے سورنگ ختم کرئں
+STR_ERROR_ANOTHER_TUNNEL_IN_THE_WAY                             :{WHITE}دوسری سورنگ بئچ مین ہے
+STR_ERROR_TUNNEL_THROUGH_MAP_BORDER                             :{WHITE}سورنگ نقشے سے بائر نکل جاے گی
+STR_ERROR_UNABLE_TO_EXCAVATE_LAND                               :{WHITE}سورنگ کے دوسرے حصے کی طرف روکاوٹ ہے
+
+# Object related errors
+STR_ERROR_OBJECT_IN_THE_WAY                                     :{WHITE}کوئی عمارت یا چیذ راستے مین ہے
+STR_ERROR_COMPANY_HEADQUARTERS_IN                               :{WHITE}کمپنی کا مرکزی دفتر راستے مین ہے
+STR_ERROR_CAN_T_PURCHASE_THIS_LAND                              :{WHITE}آپ یہ زمین نہی خرید سکتے
+STR_ERROR_YOU_ALREADY_OWN_IT                                    :{WHITE}... یہ آپ ہی کی ملکیت ہے
+
+# Group related errors
+STR_ERROR_GROUP_CAN_T_CREATE                                    :{WHITE}یہ گروہ تشکیل نہں دے سکتے
+STR_ERROR_GROUP_CAN_T_DELETE                                    :{WHITE}یہ گروہ ختم نہں سکتے
+STR_ERROR_GROUP_CAN_T_RENAME                                    :{WHITE}نام تبدیل نہں سکتے
+STR_ERROR_GROUP_CAN_T_REMOVE_ALL_VEHICLES                       :{WHITE}اس گروہ سے تمام گاڑیاں نہیں نکال سکتے
+STR_ERROR_GROUP_CAN_T_ADD_VEHICLE                               :{WHITE}اس گروہ مین گاڑی شامل نہیں سکتے
+
+# Generic vehicle errors
+STR_ERROR_TRAIN_IN_THE_WAY                                      :{WHITE}ریل گاڑی راستے مین ہے
+STR_ERROR_ROAD_VEHICLE_IN_THE_WAY                               :{WHITE}سڑک کی گاڑی راستے مین ہے
+STR_ERROR_SHIP_IN_THE_WAY                                       :{WHITE}کشتی راستے مین ہے
+STR_ERROR_AIRCRAFT_IN_THE_WAY                                   :{WHITE}ہوایی جہاز راستے مین ہے
+
+STR_ERROR_CAN_T_REFIT_TRAIN                                     :{WHITE}مال گاڑی نہیں تبدیل کر سکتے
+STR_ERROR_CAN_T_REFIT_ROAD_VEHICLE                              :{WHITE}ٹرک نہیں تبدیل کر سکتے
+STR_ERROR_CAN_T_REFIT_SHIP                                      :{WHITE}کشتی نہیں تبدیل کر سکتے
+STR_ERROR_CAN_T_REFIT_AIRCRAFT                                  :{WHITE}ہوایی نہیں تبدیل کر سکتے
+
+STR_ERROR_CAN_T_RENAME_TRAIN                                    :{WHITE}ریل گاڑی کا نام نہیں رکھ سکتے
+STR_ERROR_CAN_T_RENAME_ROAD_VEHICLE                             :{WHITE}گاڑی کا نام نہیں رکھ سکتے
+STR_ERROR_CAN_T_RENAME_SHIP                                     :{WHITE}بہری جہاز کا نام نہیں رکھ سکتے
+STR_ERROR_CAN_T_RENAME_AIRCRAFT                                 :{WHITE}ھوائی جہاز کا نام نہیں رکھ سکتے
+
+STR_ERROR_CAN_T_STOP_START_TRAIN                                :{WHITE}ریل گاڑی چلا / روک نہیں سکتے
+STR_ERROR_CAN_T_STOP_START_ROAD_VEHICLE                         :{WHITE}گاڑی چلا / روک نہیں سکتے
+STR_ERROR_CAN_T_STOP_START_SHIP                                 :{WHITE}بہری جہاز چلا/روک نہیں سکتے
+STR_ERROR_CAN_T_STOP_START_AIRCRAFT                             :{WHITE}ھوائی جہاز چلا/روک نہیں سکتے
+
+STR_ERROR_CAN_T_SEND_TRAIN_TO_DEPOT                             :{WHITE}ریل گاڑی کو اڈے نہیں بہیج سکتے
+STR_ERROR_CAN_T_SEND_ROAD_VEHICLE_TO_DEPOT                      :{WHITE}گاڑی کو اڈے نہیں بہیج سکتے
+STR_ERROR_CAN_T_SEND_SHIP_TO_DEPOT                              :{WHITE}بہری جہاز کو اڈے نہیں بہیج سکتے
+STR_ERROR_CAN_T_SEND_AIRCRAFT_TO_HANGAR                         :{WHITE}ھوائی جہاز کو اڈے نہیں بہیج سکتے
+
+STR_ERROR_CAN_T_BUY_TRAIN                                       :{WHITE}ریل گاڑی نہیں خرید سکتے
+STR_ERROR_CAN_T_BUY_ROAD_VEHICLE                                :{WHITE}گاڑی نہیں خرید سکتے
+STR_ERROR_CAN_T_BUY_SHIP                                        :{WHITE}ریل گاڑی نہیں خرید سکتے
+STR_ERROR_CAN_T_BUY_AIRCRAFT                                    :{WHITE}ھوائی جہاز نہیں خرید سکتے
+
+
+STR_ERROR_CAN_T_SELL_AIRCRAFT                                   :{WHITE}ھوائی جہاز فروخت نہیں کر سکتے
+
+STR_ERROR_RAIL_VEHICLE_NOT_AVAILABLE                            :{WHITE}گاڑی دستیاب نہیں ھے
+STR_ERROR_ROAD_VEHICLE_NOT_AVAILABLE                            :{WHITE}گاڑی دستیاب نہیں ھے
+STR_ERROR_SHIP_NOT_AVAILABLE                                    :{WHITE}بہری جہاز دستیاب نہیں ھے
+
+STR_ERROR_TOO_MANY_VEHICLES_IN_GAME                             :{WHITE}کھیل میں بہت زیادہ سواریاں
+STR_ERROR_CAN_T_CHANGE_SERVICING                                :{WHITE}مرمت کا دورانیہ تبدیل نہین کرسکتے
+
+
+# Specific vehicle errors
+
+
+
+# Order related errors
+
+
+# Timetable related errors
+
+# Sign related errors
+
+# Translatable comment for OpenTTD's desktop shortcut
+STR_DESKTOP_SHORTCUT_COMMENT                                    :Transport Tycoon Deluxe کا ھم جنس
+
+##id 0x2000
+# Town building names
+
+##id 0x4800
+# industry names
+
+############ WARNING, using range 0x6000 for strings that are stored in the savegame
+############ These strings may never get a new id, or savegames will break!
+##id 0x6000
+STR_SV_EMPTY                                                    :
+
+STR_SV_STNAME                                                   :{STRING}
+STR_SV_STNAME_BUOY                                              :{STRING}
+STR_SV_STNAME_WAYPOINT                                          :{STRING}
+##id 0x6020
+############ end of savegame specific region!
+
+##id 0x8000
+# Vehicle names
+STR_VEHICLE_NAME_TRAIN_ENGINE_RAIL_PLODDYPHUT_CHOO_CHOO         :Ploddyphut Choo-Choo
+STR_VEHICLE_NAME_TRAIN_ENGINE_RAIL_POWERNAUT_CHOO_CHOO          :Powernaut Choo-Choo
+STR_VEHICLE_NAME_TRAIN_ENGINE_RAIL_MIGHTYMOVER_CHOO_CHOO        :Mightymover Choo-Choo
+STR_VEHICLE_NAME_TRAIN_ENGINE_MONORAIL_WIZZOWOW_Z99             :Wizzowow Z99
+STR_VEHICLE_NAME_TRAIN_ENGINE_MAGLEV_WIZZOWOW_ROCKETEER         :Wizzowow Rocketeer
+STR_VEHICLE_NAME_ROAD_VEHICLE_UHL_IRON_ORE_TRUCK                :Uhl لوہے کی دھات کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_CHIPPY_IRON_ORE_TRUCK             :Chippy لوہے کی دھات کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_BALOGH_STEEL_TRUCK                :Balogh فولاد کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_UHL_STEEL_TRUCK                   :Uhl فولاد کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_KELLING_STEEL_TRUCK               :Kelling فولاد کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_FOSTER_FOOD_VAN                   :Foster خوراک کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_PERRY_FOOD_VAN                    :Perry خوراک کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_CHIPPY_FOOD_VAN                   :Chippy خوراک کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_UHL_PAPER_TRUCK                   :Uhl کاغذ کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_BALOGH_PAPER_TRUCK                :Balogh کاغذ کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MPS_PAPER_TRUCK                   :MPS کاغذ کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_SUGAR_TRUCK           :MightyMover چینی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_SUGAR_TRUCK           :Powernaught چینی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_SUGAR_TRUCK              :Wizzowow چینی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_COLA_TRUCK            :MightyMover کولا کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_COLA_TRUCK            :Powernaught کولا کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_COLA_TRUCK               :Wizzowow کولا کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_COTTON_CANDY          :MightyMover لچھے کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_COTTON_CANDY          :Powernaught لچھے کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_COTTON_CANDY_TRUCK       :Wizzowow لچھے کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_TOFFEE_TRUCK          :MightyMover ٹافی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_TOFFEE_TRUCK          :Powernaught ٹافی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_TOFFEE_TRUCK             :Wizzowow ٹافی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_TOY_VAN               :MightyMover کھلونوں کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_TOY_VAN               :Powernaught کھلونوں کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_TOY_VAN                  :Wizzowow کھلونوں کی ویگن
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_CANDY_TRUCK           :MightyMover مٹھائی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_CANDY_TRUCK           :Powernaught مٹھائی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_CANDY_TRUCK              :Wizzowow مٹھائی کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_BATTERY_TRUCK         :MightyMover بیٹری کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_BATTERY_TRUCK         :Powernaught بیٹری کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_BATTERY_TRUCK            :Wizzowow بیٹری کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_FIZZY_DRINK           :MightyMover گیسی مشروب کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_FIZZY_DRINK           :Powernaught گیسی مشروب کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_FIZZY_DRINK_TRUCK        :Wizzowow گیسی مشروب کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_PLASTIC_TRUCK         :MightyMover پلاسٹک کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_PLASTIC_TRUCK         :Powernaught پلاسٹک کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_PLASTIC_TRUCK            :Wizzowow پلاسٹک کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_MIGHTYMOVER_BUBBLE_TRUCK          :MightyMover بلبلوں کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_POWERNAUGHT_BUBBLE_TRUCK          :Powernaught بلبلوں کا ٹرک
+STR_VEHICLE_NAME_ROAD_VEHICLE_WIZZOWOW_BUBBLE_TRUCK             :Wizzowow بلبلوں کا ٹرک
+STR_VEHICLE_NAME_SHIP_MPS_OIL_TANKER                            :MPS تیل کا ٹینکر
+STR_VEHICLE_NAME_SHIP_CS_INC_OIL_TANKER                         :CS-Inc. تیل کا ٹینکر
+STR_VEHICLE_NAME_SHIP_MPS_PASSENGER_FERRY                       :MPS مسافر کشتی
+STR_VEHICLE_NAME_SHIP_FFP_PASSENGER_FERRY                       :FFP مسافر کشتی
+STR_VEHICLE_NAME_SHIP_BAKEWELL_300_HOVERCRAFT                   :Bakewell 300 ہوائی کشتی
+STR_VEHICLE_NAME_SHIP_CHUGGER_CHUG_PASSENGER                    :Chugger-Chug مسافر کشتی
+STR_VEHICLE_NAME_SHIP_SHIVERSHAKE_PASSENGER_FERRY               :Shivershake مسافر کشتی
+STR_VEHICLE_NAME_SHIP_YATE_CARGO_SHIP                           :Yate مال بردار کشتی
+STR_VEHICLE_NAME_SHIP_BAKEWELL_CARGO_SHIP                       :Bakewell مال بردار کشتی
+STR_VEHICLE_NAME_SHIP_MIGHTYMOVER_CARGO_SHIP                    :Mightymover مال بردار کشتی
+STR_VEHICLE_NAME_SHIP_POWERNAUT_CARGO_SHIP                      :Powernaut مال بردار کشتی
+STR_VEHICLE_NAME_AIRCRAFT_SAMPSON_U52                           :Sampson U52
+STR_VEHICLE_NAME_AIRCRAFT_COLEMAN_COUNT                         :Coleman گنتی
+STR_VEHICLE_NAME_AIRCRAFT_FFP_DART                              :FFP تیر
+STR_VEHICLE_NAME_AIRCRAFT_YATE_HAUGAN                           :Yate Haugan
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_COTSWALD_LB_3                :Bakewell Cotswald LB-3
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_LUCKETT_LB_8                 :Bakewell Luckett LB-8
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_LUCKETT_LB_9                 :Bakewell Luckett LB-9
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_LUCKETT_LB80                 :Bakewell Luckett LB80
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_LUCKETT_LB_10                :Bakewell Luckett LB-10
+STR_VEHICLE_NAME_AIRCRAFT_BAKEWELL_LUCKETT_LB_11                :Bakewell Luckett LB-11
+STR_VEHICLE_NAME_AIRCRAFT_YATE_AEROSPACE_YAC_1_11               :Yate Aerospace YAC 1-11
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_100                            :Darwin 100
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_200                            :Darwin 200
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_300                            :Darwin 300
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_400                            :Darwin 400
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_500                            :Darwin 500
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_600                            :Darwin 600
+STR_VEHICLE_NAME_AIRCRAFT_GURU_GALAXY                           :گرو کائینات
+STR_VEHICLE_NAME_AIRCRAFT_AIRTAXI_A21                           :Airtaxi A21
+STR_VEHICLE_NAME_AIRCRAFT_AIRTAXI_A31                           :Airtaxi A31
+STR_VEHICLE_NAME_AIRCRAFT_AIRTAXI_A32                           :Airtaxi A32
+STR_VEHICLE_NAME_AIRCRAFT_AIRTAXI_A33                           :Airtaxi A33
+STR_VEHICLE_NAME_AIRCRAFT_YATE_AEROSPACE_YAE46                  :Yate Aerospace YAe46
+STR_VEHICLE_NAME_AIRCRAFT_DINGER_100                            :Dinger 100
+STR_VEHICLE_NAME_AIRCRAFT_AIRTAXI_A34_1000                      :AirTaxi A34-1000
+STR_VEHICLE_NAME_AIRCRAFT_YATE_Z_SHUTTLE                        :Yate Z-Shuttle
+STR_VEHICLE_NAME_AIRCRAFT_KELLING_K1                            :Kelling K1
+STR_VEHICLE_NAME_AIRCRAFT_KELLING_K6                            :Kelling K6
+STR_VEHICLE_NAME_AIRCRAFT_KELLING_K7                            :Kelling K7
+STR_VEHICLE_NAME_AIRCRAFT_DARWIN_700                            :Darwin 700
+STR_VEHICLE_NAME_AIRCRAFT_FFP_HYPERDART_2                       :FFP Hyperdart 2
+STR_VEHICLE_NAME_AIRCRAFT_DINGER_200                            :Dinger 200
+STR_VEHICLE_NAME_AIRCRAFT_DINGER_1000                           :Dinger 1000
+STR_VEHICLE_NAME_AIRCRAFT_PLODDYPHUT_100                        :Ploddyphut 100
+STR_VEHICLE_NAME_AIRCRAFT_PLODDYPHUT_500                        :Ploddyphut 500
+STR_VEHICLE_NAME_AIRCRAFT_FLASHBANG_X1                          :Flashbang X1
+STR_VEHICLE_NAME_AIRCRAFT_JUGGERPLANE_M1                        :Juggerplane M1
+STR_VEHICLE_NAME_AIRCRAFT_FLASHBANG_WIZZER                      :Flashbang Wizzer
+STR_VEHICLE_NAME_AIRCRAFT_TRICARIO_HELICOPTER                   :Tricario ہیلی کاپٹر
+STR_VEHICLE_NAME_AIRCRAFT_GURU_X2_HELICOPTER                    :گرو X2 ہیلی کاپٹر
+STR_VEHICLE_NAME_AIRCRAFT_POWERNAUT_HELICOPTER                  :Powernaut ہیلی کاپٹر
+
+##id 0x8800
+# Formatting of some strings
+STR_FORMAT_DATE_TINY                                            :{STRING}-{STRING}-{NUM}
+STR_FORMAT_DATE_SHORT                                           :{STRING} {NUM}
+STR_FORMAT_DATE_LONG                                            :{STRING} {STRING} {NUM}
+STR_FORMAT_DATE_ISO                                             :{2:NUM}-{1:STRING}-{0:STRING}
+
+STR_FORMAT_COMPANY_NUM                                          :(کمپنی {COMMA})
+STR_FORMAT_GROUP_NAME                                           :گروہ {COMMA}
+STR_FORMAT_INDUSTRY_NAME                                        :{TOWN} {STRING}
+STR_FORMAT_WAYPOINT_NAME                                        :{TOWN} راستے کا نشان
+STR_FORMAT_WAYPOINT_NAME_SERIAL                                 :{TOWN} راستے کا نشان #{COMMA}
+
+STR_FORMAT_DEPOT_NAME_TRAIN                                     :{TOWN} ریل گاڑی ڈیپو
+STR_FORMAT_DEPOT_NAME_TRAIN_SERIAL                              :{TOWN} ریل گاڑی ڈیپو # {COMMA}
+STR_FORMAT_DEPOT_NAME_ROAD_VEHICLE                              :{TOWN} گاڑی ڈیپو
+STR_FORMAT_DEPOT_NAME_ROAD_VEHICLE_SERIAL                       :{TOWN} گاڑی ڈیپو #{COMMA}
+STR_FORMAT_DEPOT_NAME_SHIP                                      :{TOWN} بحری جھاز ڈیپو
+STR_FORMAT_DEPOT_NAME_SHIP_SERIAL                               :{TOWN} بحری جھاز ڈیپو #{COMMA}
+STR_FORMAT_DEPOT_NAME_AIRCRAFT                                  :{STATION} طیارھ گاھ
+
+STR_UNKNOWN_STATION                                             :نا معلوم اسٹیشن
+STR_DEFAULT_SIGN_NAME                                           :اشارہ
+STR_COMPANY_SOMEONE                                             :کوئی
+
+STR_SAVEGAME_NAME_DEFAULT                                       :{COMPANY}, {STRING}
+STR_SAVEGAME_NAME_SPECTATOR                                     :تماشائی, {1:STRING}
+
+# Viewport strings
+STR_VIEWPORT_TOWN_POP                                           :{WHITE}{TOWN} ({COMMA})
+STR_VIEWPORT_TOWN                                               :{WHITE}{TOWN}
+STR_VIEWPORT_TOWN_TINY_BLACK                                    :{TINYFONT}{BLACK}{TOWN}
+STR_VIEWPORT_TOWN_TINY_WHITE                                    :{TINYFONT}{WHITE}{TOWN}
+
+STR_VIEWPORT_SIGN_SMALL_BLACK                                   :{TINYFONT}{BLACK}{SIGN}
+STR_VIEWPORT_SIGN_SMALL_WHITE                                   :{TINYFONT}{WHITE}{SIGN}
+
+STR_VIEWPORT_STATION                                            :{STATION} {STATIONFEATURES}
+STR_VIEWPORT_STATION_TINY                                       :{TINYFONT}{STATION}
+
+STR_VIEWPORT_WAYPOINT                                           :{WAYPOINT}
+STR_VIEWPORT_WAYPOINT_TINY                                      :{TINYFONT}{WAYPOINT}
+
+# Simple strings to get specific types of data
+STR_COMPANY_NAME                                                :{COMPANY}
+STR_COMPANY_NAME_COMPANY_NUM                                    :{COMPANY} {COMPANYNUM}
+STR_DEPOT_NAME                                                  :{DEPOT}
+STR_ENGINE_NAME                                                 :{ENGINE}
+STR_GROUP_NAME                                                  :{GROUP}
+STR_INDUSTRY_NAME                                               :{INDUSTRY}
+STR_PRESIDENT_NAME                                              :{PRESIDENTNAME}
+STR_SIGN_NAME                                                   :{SIGN}
+STR_STATION_NAME                                                :{STATION}
+STR_TOWN_NAME                                                   :{TOWN}
+STR_VEHICLE_NAME                                                :{VEHICLE}
+STR_WAYPOINT_NAME                                               :{WAYPOINT}
+
+STR_JUST_CARGO                                                  :{CARGO}
+STR_JUST_CHECKMARK                                              :{CHECKMARK}
+STR_JUST_COMMA                                                  :{COMMA}
+STR_JUST_CURRCOMPACT                                            :{CURRCOMPACT}
+STR_JUST_CURRENCY                                               :{CURRENCY}
+STR_JUST_INT                                                    :{NUM}
+STR_JUST_DATE_TINY                                              :{DATE_TINY}
+STR_JUST_DATE_SHORT                                             :{DATE_SHORT}
+STR_JUST_DATE_LONG                                              :{DATE_LONG}
+STR_JUST_DATE_ISO                                               :{DATE_ISO}
+STR_JUST_STRING                                                 :{STRING}
+STR_JUST_STRING_SPACE_STRING                                    :{STRING} {STRING}
+STR_JUST_RAW_STRING                                             :{STRING}
+
+# Slightly 'raw' stringcodes with colour or size
+STR_BLACK_COMMA                                                 :{BLACK}{COMMA}
+STR_TINY_BLACK_COMA                                             :{TINYFONT}{BLACK}{COMMA}
+STR_TINY_COMMA                                                  :{TINYFONT}{COMMA}
+STR_BLUE_COMMA                                                  :{BLUE}{COMMA}
+STR_RED_COMMA                                                   :{RED}{COMMA}
+STR_COMPANY_MONEY                                               :{WHITE}{CURRENCY}
+STR_BLACK_DATE_LONG                                             :{BLACK}{DATE_LONG}
+STR_BLACK_CROSS                                                 :{BLACK}{CROSS}
+STR_SILVER_CROSS                                                :{SILVER}{CROSS}
+STR_WHITE_DATE_LONG                                             :{WHITE}{DATE_LONG}
+STR_SHORT_DATE                                                  :{WHITE}{DATE_TINY}
+STR_DATE_LONG_SMALL                                             :{TINYFONT}{BLACK}{DATE_LONG}
+STR_TINY_GROUP                                                  :{TINYFONT}{GROUP}
+STR_BLACK_INT                                                   :{BLACK}{NUM}
+STR_ORANGE_INT                                                  :{ORANGE}{NUM}
+STR_WHITE_SIGN                                                  :{WHITE}{SIGN}
+STR_TINY_BLACK_STATION                                          :{TINYFONT}{BLACK}{STATION}
+STR_BLACK_STRING                                                :{BLACK}{STRING}
+STR_BLACK_RAW_STRING                                            :{BLACK}{STRING}
+STR_GREEN_STRING                                                :{GREEN}{STRING}
+STR_ORANGE_STRING                                               :{ORANGE}{STRING}
+STR_RED_STRING                                                  :{RED}{STRING}
+STR_WHITE_STRING                                                :{WHITE}{STRING}
+STR_TINY_BLACK_HEIGHT                                           :{TINYFONT}{BLACK}{HEIGHT}
+STR_TINY_BLACK_VEHICLE                                          :{TINYFONT}{BLACK}{VEHICLE}
+STR_TINY_RIGHT_ARROW                                            :{TINYFONT}{RIGHTARROW}
+
+STR_BLACK_1                                                     :{BLACK}۱
+STR_BLACK_2                                                     :{BLACK}۲
+STR_BLACK_3                                                     :{BLACK}۳
+STR_BLACK_4                                                     :{BLACK}۴
+STR_BLACK_5                                                     :{BLACK}۵
+STR_BLACK_6                                                     :{BLACK}۶
+STR_BLACK_7                                                     :{BLACK}۷
+
+STR_TRAIN                                                       :{BLACK}{TRAIN}
+STR_BUS                                                         :{BLACK}{BUS}
+STR_LORRY                                                       :{BLACK}{LORRY}
+STR_PLANE                                                       :{BLACK}{PLANE}
+STR_SHIP                                                        :{BLACK}{SHIP}
+
+STR_TOOLBAR_RAILTYPE_VELOCITY                                   :{STRING} ({VELOCITY})
