@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<emulation version="1">
+<toucharea x="224" y="0" width="800" height="600" image="touch_dark.png" tapSensitive="1"/>
+<mousebutton x="0" y="0" width="200" height="100" mask="1" button="left" image="sclick_dark.png">
+<label x="0" y="80" width="200" height="20" image="sclick.png"/>
+</mousebutton>
+<mousebutton x="0" y="100" width="200" height="200" mask="0" button="right" image="rclick_dark.png">
+<label x="0" y="180" width="200" height="20" image="rclick.png"/>
+</mousebutton>
+<mousebutton x="0" y="300" width="200" height="200" mask="0" button="left" image="lclick_dark.png">
+<label x="0" y="180" width="200" height="20" image="lclick.png"/>
+</mousebutton>
+<mousebutton x="0" y="500" width="200" height="100" mask="2" button="left" image="cclick_dark.png">
+<label x="0" y="80" width="200" height="20" image="cclick.png"/>
+</mousebutton>
+</emulation>

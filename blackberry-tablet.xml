@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+   <!-- BlackBerry Tablet OS application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry Tablet OS.
+
+-->
+   <!-- A universally unique application identifier. Must be unique across all BlackBerry Tablet OS applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+
+   <id>com.sample.openttd</id>
+
+   <!-- Used as the filename for the application. Required. -->
+   <!-- The name that is displayed in the BlackBerry Tablet OS application installer. 
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+
+   <name>OpenTTD</name>
+
+   <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade. 
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+
+   <versionNumber>1.0.0</versionNumber>
+
+   <!-- Fourth digit segment of the package version. First three segments are taken from the 
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+
+   <buildId>1</buildId>
+
+   <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
+   <!-- <versionLabel></versionLabel> -->
+   <!-- Description, displayed in the BlackBerry Tablet OS application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+
+
+   <!-- Copyright information. Optional. -->
+   <!-- <copyright></copyright> -->
+   <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+
+   <author>Jeremy Nicholl</author>
+   <authorId>gYAAgGGvW6jRCGwG6aQx8lGCQzI</authorId>
+   <description>OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe.</description>
+
+   <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+   <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+
+   <initialWindow>
+      <aspectRatio>landscape</aspectRatio>
+      <autoOrients>false</autoOrients>
+      <systemChrome>none</systemChrome>
+      <transparent>false</transparent>
+   </initialWindow>
+
+   <!--  The category where the application appears. Either core.games or core.media. -->
+
+   <category>core.games</category>
+   <asset path="icon.png">icon.png</asset>
+   <asset path="${workspace_loc:openttd/splashscreen.png}">splashscreen.png</asset>
+   <asset path="${workspace_loc:openttd/ai/compat_0.7.nut}">ai/compat_0.7.nut</asset>
+   <asset path="${workspace_loc:openttd/ai/compat_1.0.nut}">ai/compat_1.0.nut</asset>
+   <asset path="${workspace_loc:openttd/ai/compat_1.1.nut}">ai/compat_1.1.nut</asset>
+   <asset path="${workspace_loc:openttd/data/no_sound.obs}">data/no_sound.obs</asset>
+   <asset path="${workspace_loc:openttd/data/openttd.grf}">data/openttd.grf</asset>
+   <asset path="${workspace_loc:openttd/data/opntitle.dat}">data/opntitle.dat</asset>
+   <asset path="${workspace_loc:openttd/data/orig_dos_de.obg}">data/orig_dos_de.obg</asset>
+   <asset path="${workspace_loc:openttd/data/orig_dos.obg}">data/orig_dos.obg</asset>
+   <asset path="${workspace_loc:openttd/data/orig_dos.obs}">data/orig_dos.obs</asset>
+   <asset path="${workspace_loc:openttd/data/orig_win.obg}">data/orig_win.obg</asset>
+   <asset path="${workspace_loc:openttd/data/orig_win.obs}">data/orig_win.obs</asset>
+   <asset path="${workspace_loc:openttd/gm/no_music.obm}">gm/no_music.obm</asset>
+   <asset path="${workspace_loc:openttd/gm/orig_win.obm}">gm/orig_win.obm</asset>
+   <asset path="${workspace_loc:openttd/lang/english_US.lng}">lang/english_US.lng</asset>
+   <asset path="${workspace_loc:openttd/lang/english.lng}">lang/english.lng</asset>
+   <asset path="${workspace_loc:openttd/data/ogfx1_base.grf}">data/ogfx1_base.grf</asset>
+   <asset path="${workspace_loc:openttd/data/ogfxc_arctic.grf}">data/ogfxc_arctic.grf</asset>
+   <asset path="${workspace_loc:openttd/data/ogfxe_extra.grf}">data/ogfxe_extra.grf</asset>
+   <asset path="${workspace_loc:openttd/data/ogfxh_tropical.grf}">data/ogfxh_tropical.grf</asset>
+   <asset path="${workspace_loc:openttd/data/ogfxi_logos.grf}">data/ogfxi_logos.grf</asset>
+   <asset path="${workspace_loc:openttd/data/ogfxt_toyland.grf}">data/ogfxt_toyland.grf</asset>
+   <asset path="${workspace_loc:openttd/data/opengfx.obg}">data/opengfx.obg</asset>
+   <asset path="${workspace_loc:openttd/data/opensfx.cat}">data/opensfx.cat</asset>
+   <asset path="${workspace_loc:openttd/data/opensfx.obs}">data/opensfx.obs</asset>
+   <asset path="${workspace_loc:openttd/gm/5432gone_redfarn.mid}">gm/5432gone_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/be_sharp_bw_redfarn.mid}">gm/be_sharp_bw_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/big_man_boogie_redfarn.mid}">gm/big_man_boogie_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/boogi_marabi_redfarn.mid}">gm/boogi_marabi_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/busy_schedule.mid}">gm/busy_schedule.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/careless_perc_redfarn.mid}">gm/careless_perc_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/chemistry_lab.mid}">gm/chemistry_lab.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/chuggachugga.mid}">gm/chuggachugga.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/city_blues_redfarn.mid}">gm/city_blues_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/coconut_run2.mid}">gm/coconut_run2.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/flying_scotsman.mid}">gm/flying_scotsman.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/harp_harmony.mid}">gm/harp_harmony.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/linns_basket.mid}">gm/linns_basket.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/midnight_snow_run.mid}">gm/midnight_snow_run.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/mighty_giant_run.mid}">gm/mighty_giant_run.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/modern_motion.mid}">gm/modern_motion.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/moo_redfarn.mid}">gm/moo_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/mosey_along_redfarn.mid}">gm/mosey_along_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/no_work_song_redfarn.mid}">gm/no_work_song_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/openmsx.obm}">gm/openmsx.obm</asset>
+   <asset path="${workspace_loc:openttd/gm/relax_song.mid}">gm/relax_song.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/run_for_your_life.mid}">gm/run_for_your_life.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/say_what_redfarn.mid}">gm/say_what_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/slow_neasy_redfarn.mid}">gm/slow_neasy_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/the_fast_route.mid}">gm/the_fast_route.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/the_hobo_redfarn.mid}">gm/the_hobo_redfarn.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/train_filled_with_cash.mid}">gm/train_filled_with_cash.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/ttsong_iii_imuh3.mid}">gm/ttsong_iii_imuh3.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/ttsong_iv_imuh3.mid}">gm/ttsong_iv_imuh3.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/tttheme2.mid}">gm/tttheme2.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/ultimate_run.mid}">gm/ultimate_run.mid</asset>
+   <asset path="${workspace_loc:openttd/gm/wood_whistles.mid}">gm/wood_whistles.mid</asset>
+   <asset path="${workspace_loc:openttd/sdl-controls.xml}">sdl-controls.xml</asset>
+   <asset path="${workspace_loc:openttd/cclick_dark.png}">cclick_dark.png</asset>
+   <asset path="${workspace_loc:openttd/cclick.png}">cclick.png</asset>
+   <asset path="${workspace_loc:openttd/lclick_dark.png}">lclick_dark.png</asset>
+   <asset path="${workspace_loc:openttd/lclick.png}">lclick.png</asset>
+   <asset path="${workspace_loc:openttd/rclick_dark.png}">rclick_dark.png</asset>
+   <asset path="${workspace_loc:openttd/rclick.png}">rclick.png</asset>
+   <asset path="${workspace_loc:openttd/sclick_dark.png}">sclick_dark.png</asset>
+   <asset path="${workspace_loc:openttd/sclick.png}">sclick.png</asset>
+   <asset path="${workspace_loc:openttd/touch_dark.png}">touch_dark.png</asset>
+   <asset path="${workspace_loc:openttd/timidity/acbass.pat}">timidity/acbass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/accordn.pat}">timidity/accordn.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/acguitar.pat}">timidity/acguitar.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/acpiano.pat}">timidity/acpiano.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/agogo.pat}">timidity/agogo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/agogohi.pat}">timidity/agogohi.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/agogolo.pat}">timidity/agogolo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/altosax.pat}">timidity/altosax.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/applause.pat}">timidity/applause.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/atmosphr.pat}">timidity/atmosphr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/aurora.pat}">timidity/aurora.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bagpipes.pat}">timidity/bagpipes.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/banjo.pat}">timidity/banjo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/barisax.pat}">timidity/barisax.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/basslead.pat}">timidity/basslead.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bassoon.pat}">timidity/bassoon.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/belltree.pat}">timidity/belltree.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/blank.pat}">timidity/blank.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bongohi.pat}">timidity/bongohi.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bongolo.pat}">timidity/bongolo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bottle.pat}">timidity/bottle.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/bowglass.pat}">timidity/bowglass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/britepno.pat}">timidity/britepno.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cabasa.pat}">timidity/cabasa.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/calliope.pat}">timidity/calliope.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/carillon.pat}">timidity/carillon.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/castinet.pat}">timidity/castinet.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/celeste.pat}">timidity/celeste.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cello.pat}">timidity/cello.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/charang.pat}">timidity/charang.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/chiflead.pat}">timidity/chiflead.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/choir.pat}">timidity/choir.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/church.pat}">timidity/church.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/claps.pat}">timidity/claps.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/clarinet.pat}">timidity/clarinet.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/clave.pat}">timidity/clave.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/clavinet.pat}">timidity/clavinet.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cleangtr.pat}">timidity/cleangtr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/concrtbd.pat}">timidity/concrtbd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/concrtna.pat}">timidity/concrtna.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/congahi1.pat}">timidity/congahi1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/congahi2.pat}">timidity/congahi2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/congalo.pat}">timidity/congalo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/contraba.pat}">timidity/contraba.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cowbell.pat}">timidity/cowbell.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/crystal.pat}">timidity/crystal.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cuica1.pat}">timidity/cuica1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cuica2.pat}">timidity/cuica2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymbell.pat}">timidity/cymbell.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymchina.pat}">timidity/cymchina.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymcrsh1.pat}">timidity/cymcrsh1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymcrsh2.pat}">timidity/cymcrsh2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymride1.pat}">timidity/cymride1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymride2.pat}">timidity/cymride2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/cymsplsh.pat}">timidity/cymsplsh.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/default.cfg}">timidity/default.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/distgtr.pat}">timidity/distgtr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/doo.pat}">timidity/doo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/echovox.pat}">timidity/echovox.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/englhorn.pat}">timidity/englhorn.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/epiano1.pat}">timidity/epiano1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/epiano2.pat}">timidity/epiano2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/fiddle.pat}">timidity/fiddle.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/flute.pat}">timidity/flute.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/fngrbass.pat}">timidity/fngrbass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/frenchrn.pat}">timidity/frenchrn.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/freshair.pat}">timidity/freshair.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/fretless.pat}">timidity/fretless.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/fx-blow.pat}">timidity/fx-blow.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/fx-fret.pat}">timidity/fx-fret.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ghostie.pat}">timidity/ghostie.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/glocken.pat}">timidity/glocken.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gravis.cfg}">timidity/gravis.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrums.cfg}">timidity/gsdrums.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/gssfx.cfg}">timidity/gssfx.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/gtrharm.pat}">timidity/gtrharm.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/guiro1.pat}">timidity/guiro1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/guiro2.pat}">timidity/guiro2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/halopad.pat}">timidity/halopad.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hammond.pat}">timidity/hammond.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/harmonca.pat}">timidity/harmonca.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/harp.pat}">timidity/harp.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/helicptr.pat}">timidity/helicptr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/highq.pat}">timidity/highq.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hihatcl.pat}">timidity/hihatcl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hihatop.pat}">timidity/hihatop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hihatpd.pat}">timidity/hihatpd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hitbrass.pat}">timidity/hitbrass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/honky.pat}">timidity/honky.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/hrpschrd.pat}">timidity/hrpschrd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/jazzgtr.pat}">timidity/jazzgtr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/jingles.pat}">timidity/jingles.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/jungle.pat}">timidity/jungle.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/kalimba.pat}">timidity/kalimba.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/kick1.pat}">timidity/kick1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/kick2.pat}">timidity/kick2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/koto.pat}">timidity/koto.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/lead5th.pat}">timidity/lead5th.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/maracas.pat}">timidity/maracas.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/marcato.pat}">timidity/marcato.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/marimba.pat}">timidity/marimba.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/metalpad.pat}">timidity/metalpad.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/metbell.pat}">timidity/metbell.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/metclick.pat}">timidity/metclick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mt-32.cfg}">timidity/mt-32.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/musicbox.pat}">timidity/musicbox.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mutegtr.pat}">timidity/mutegtr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mutetrum.pat}">timidity/mutetrum.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/newage.pat}">timidity/newage.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/nyguitar.pat}">timidity/nyguitar.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/oboe.pat}">timidity/oboe.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ocarina.pat}">timidity/ocarina.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/odguitar.pat}">timidity/odguitar.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/orchhit.pat}">timidity/orchhit.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/percorg.pat}">timidity/percorg.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/piccolo.pat}">timidity/piccolo.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/pickbass.pat}">timidity/pickbass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/pistol.pat}">timidity/pistol.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/pizzcato.pat}">timidity/pizzcato.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/polysyn.pat}">timidity/polysyn.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/proteus2.cfg}">timidity/proteus2.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/recorder.pat}">timidity/recorder.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/reedorg.pat}">timidity/reedorg.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/revcym.pat}">timidity/revcym.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/rockorg.pat}">timidity/rockorg.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/santur.pat}">timidity/santur.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sawwave.pat}">timidity/sawwave.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/scratch1.pat}">timidity/scratch1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/scratch2.pat}">timidity/scratch2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/seashore.pat}">timidity/seashore.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/shakazul.pat}">timidity/shakazul.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/shaker.pat}">timidity/shaker.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/shamisen.pat}">timidity/shamisen.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/shannai.pat}">timidity/shannai.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sitar.pat}">timidity/sitar.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/slap.pat}">timidity/slap.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/slapbas1.pat}">timidity/slapbas1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/slapbas2.pat}">timidity/slapbas2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/slowstr.pat}">timidity/slowstr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/snap.pat}">timidity/snap.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/snare1.pat}">timidity/snare1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/snare2.pat}">timidity/snare2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/snarerol.pat}">timidity/snarerol.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sndfont.cfg}">timidity/sndfont.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/soundtrk.pat}">timidity/soundtrk.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sprnosax.pat}">timidity/sprnosax.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sqrclick.pat}">timidity/sqrclick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sqrwave.pat}">timidity/sqrwave.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/startrak.pat}">timidity/startrak.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/steeldrm.pat}">timidity/steeldrm.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/stickrim.pat}">timidity/stickrim.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sticks.pat}">timidity/sticks.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/surdo1.pat}">timidity/surdo1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/surdo2.pat}">timidity/surdo2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sustain.cfg}">timidity/sustain.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/sweeper.pat}">timidity/sweeper.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synbass1.pat}">timidity/synbass1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synbass2.pat}">timidity/synbass2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synbras1.pat}">timidity/synbras1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synbras2.pat}">timidity/synbras2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synpiano.pat}">timidity/synpiano.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synstr1.pat}">timidity/synstr1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/synstr2.pat}">timidity/synstr2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/syntom.pat}">timidity/syntom.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/taiko.pat}">timidity/taiko.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tamborin.pat}">timidity/tamborin.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/telephon.pat}">timidity/telephon.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tenorsax.pat}">timidity/tenorsax.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/timbaleh.pat}">timidity/timbaleh.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/timbalel.pat}">timidity/timbalel.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/timidity.cfg}">timidity/timidity.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/timpani.pat}">timidity/timpani.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tomhi1.pat}">timidity/tomhi1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tomhi2.pat}">timidity/tomhi2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tomlo1.pat}">timidity/tomlo1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tomlo2.pat}">timidity/tomlo2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tommid1.pat}">timidity/tommid1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tommid2.pat}">timidity/tommid2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/toms.pat}">timidity/toms.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tremstr.pat}">timidity/tremstr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/triangl1.pat}">timidity/triangl1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/triangl2.pat}">timidity/triangl2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/trombone.pat}">timidity/trombone.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/trump2.pat}">timidity/trump2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/trumpet.pat}">timidity/trumpet.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tuba.pat}">timidity/tuba.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/tubebell.pat}">timidity/tubebell.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/unicorn.pat}">timidity/unicorn.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/vibes.pat}">timidity/vibes.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/vibslap.pat}">timidity/vibslap.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/viola.pat}">timidity/viola.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/violin.pat}">timidity/violin.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/voices.pat}">timidity/voices.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/voxlead.pat}">timidity/voxlead.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/warmpad.pat}">timidity/warmpad.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/whistle.pat}">timidity/whistle.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/whistle1.pat}">timidity/whistle1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/whistle2.pat}">timidity/whistle2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/woodblk.pat}">timidity/woodblk.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/woodblk1.pat}">timidity/woodblk1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/woodblk2.pat}">timidity/woodblk2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/woodflut.pat}">timidity/woodflut.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/xgmap2.cfg}">timidity/xgmap2.cfg</asset>
+   <asset path="${workspace_loc:openttd/timidity/xylophon.pat}">timidity/xylophon.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ethnic/gong.pat}">timidity/ethnic/gong.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ethnic/tabla.pat}">timidity/ethnic/tabla.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ethnic/talkbend.pat}">timidity/ethnic/talkbend.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/ethnic/talkdrum.pat}">timidity/ethnic/talkdrum.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roomhi1.pat}">timidity/gsdrum08/roomhi1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roomhi2.pat}">timidity/gsdrum08/roomhi2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roomkick.pat}">timidity/gsdrum08/roomkick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roomlow1.pat}">timidity/gsdrum08/roomlow1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roomlow2.pat}">timidity/gsdrum08/roomlow2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roommid1.pat}">timidity/gsdrum08/roommid1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum08/roommid2.pat}">timidity/gsdrum08/roommid2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/78hhc.pat}">timidity/gsdrum25/78hhc.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/78hho.pat}">timidity/gsdrum25/78hho.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/78kick.pat}">timidity/gsdrum25/78kick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/78snare.pat}">timidity/gsdrum25/78snare.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808bd2.pat}">timidity/gsdrum25/808bd2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808clap1.pat}">timidity/gsdrum25/808clap1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808clap2.pat}">timidity/gsdrum25/808clap2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808cowbl.pat}">timidity/gsdrum25/808cowbl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808crsh1.pat}">timidity/gsdrum25/808crsh1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808cymb.pat}">timidity/gsdrum25/808cymb.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808hhc.pat}">timidity/gsdrum25/808hhc.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808hho.pat}">timidity/gsdrum25/808hho.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808kick.pat}">timidity/gsdrum25/808kick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808sd1.pat}">timidity/gsdrum25/808sd1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808sd2.pat}">timidity/gsdrum25/808sd2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808snar2.pat}">timidity/gsdrum25/808snar2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808snare.pat}">timidity/gsdrum25/808snare.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808stick.pat}">timidity/gsdrum25/808stick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808tomh1.pat}">timidity/gsdrum25/808tomh1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808tomh2.pat}">timidity/gsdrum25/808tomh2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808toml1.pat}">timidity/gsdrum25/808toml1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808toml2.pat}">timidity/gsdrum25/808toml2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808tomm1.pat}">timidity/gsdrum25/808tomm1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/808tomm2.pat}">timidity/gsdrum25/808tomm2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/909hhc.pat}">timidity/gsdrum25/909hhc.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/909hho.pat}">timidity/gsdrum25/909hho.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/909kick.pat}">timidity/gsdrum25/909kick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/909snare.pat}">timidity/gsdrum25/909snare.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/909stick.pat}">timidity/gsdrum25/909stick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/revcym.pat}">timidity/gsdrum25/revcym.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum25/scratch.pat}">timidity/gsdrum25/scratch.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum40/br_slap.pat}">timidity/gsdrum40/br_slap.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum40/br_swirl.pat}">timidity/gsdrum40/br_swirl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum40/br_swish.pat}">timidity/gsdrum40/br_swish.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum40/hihatcl.pat}">timidity/gsdrum40/hihatcl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gsdrum40/hihatop.pat}">timidity/gsdrum40/hihatop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gus/scratch1.pat}">timidity/gus/scratch1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gus/scratch2.pat}">timidity/gus/scratch2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gus/slap.pat}">timidity/gus/slap.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/gus/sqrwave.pat}">timidity/gus/sqrwave.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/birdy5.pat}">timidity/mazpat/fx/birdy5.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/carstart.pat}">timidity/mazpat/fx/carstart.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/drop.pat}">timidity/mazpat/fx/drop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/footstep.pat}">timidity/mazpat/fx/footstep.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/jet.pat}">timidity/mazpat/fx/jet.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/jungle.pat}">timidity/mazpat/fx/jungle.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/laser2.pat}">timidity/mazpat/fx/laser2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/newstep.pat}">timidity/mazpat/fx/newstep.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/newtrain.pat}">timidity/mazpat/fx/newtrain.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/rainyday.pat}">timidity/mazpat/fx/rainyday.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/sn-roll.pat}">timidity/mazpat/fx/sn-roll.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/steps.pat}">timidity/mazpat/fx/steps.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/train.pat}">timidity/mazpat/fx/train.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/water1.pat}">timidity/mazpat/fx/water1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/water2.pat}">timidity/mazpat/fx/water2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/water3.pat}">timidity/mazpat/fx/water3.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/water4.pat}">timidity/mazpat/fx/water4.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/watrbird.pat}">timidity/mazpat/fx/watrbird.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/wind3a.pat}">timidity/mazpat/fx/wind3a.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/mazpat/fx/windnois.pat}">timidity/mazpat/fx/windnois.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/gatedbd.pat}">timidity/power/gatedbd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/gatesd0.pat}">timidity/power/gatesd0.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/gatesd1.pat}">timidity/power/gatesd1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/gatesd2.pat}">timidity/power/gatesd2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-bd.pat}">timidity/power/h-bd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-crash.pat}">timidity/power/h-crash.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-hihatc.pat}">timidity/power/h-hihatc.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-hihato.pat}">timidity/power/h-hihato.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-hihatp.pat}">timidity/power/h-hihatp.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-ride.pat}">timidity/power/h-ride.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-rim.pat}">timidity/power/h-rim.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-snare.pat}">timidity/power/h-snare.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-splash.pat}">timidity/power/h-splash.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tomhi1.pat}">timidity/power/h-tomhi1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tomhi2.pat}">timidity/power/h-tomhi2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tomlo1.pat}">timidity/power/h-tomlo1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tomlo2.pat}">timidity/power/h-tomlo2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tommd1.pat}">timidity/power/h-tommd1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/h-tommd2.pat}">timidity/power/h-tommd2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/hihatcl.pat}">timidity/power/hihatcl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/hihatop.pat}">timidity/power/hihatop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/hihatpd.pat}">timidity/power/hihatpd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/powrkic0.pat}">timidity/power/powrkic0.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/powrkic1.pat}">timidity/power/powrkic1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/powrkic2.pat}">timidity/power/powrkic2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/powrkic3.pat}">timidity/power/powrkic3.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roomhi1.pat}">timidity/power/roomhi1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roomhi2.pat}">timidity/power/roomhi2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roomkick.pat}">timidity/power/roomkick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roomlow1.pat}">timidity/power/roomlow1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roomlow2.pat}">timidity/power/roomlow2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roommid1.pat}">timidity/power/roommid1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/power/roommid2.pat}">timidity/power/roommid2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/ambulanc.pat}">timidity/sfx/ambulanc.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/badmaou.pat}">timidity/sfx/badmaou.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/birdtwee.pat}">timidity/sfx/birdtwee.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/bubbles1.pat}">timidity/sfx/bubbles1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/bubbling.pat}">timidity/sfx/bubbling.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/carcrash.pat}">timidity/sfx/carcrash.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/carengin.pat}">timidity/sfx/carengin.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/carpass.pat}">timidity/sfx/carpass.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/carstop.pat}">timidity/sfx/carstop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/cat1.pat}">timidity/sfx/cat1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/creak.pat}">timidity/sfx/creak.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/cutnoiz.pat}">timidity/sfx/cutnoiz.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/dialtone.pat}">timidity/sfx/dialtone.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/dog1.pat}">timidity/sfx/dog1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/dog2.pat}">timidity/sfx/dog2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/doggrowl.pat}">timidity/sfx/doggrowl.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/door.pat}">timidity/sfx/door.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/explsion.pat}">timidity/sfx/explsion.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/firework.pat}">timidity/sfx/firework.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/flclick.pat}">timidity/sfx/flclick.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/fretnoyz.pat}">timidity/sfx/fretnoyz.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/funkgtr.pat}">timidity/sfx/funkgtr.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/gallop.pat}">timidity/sfx/gallop.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/ghost.pat}">timidity/sfx/ghost.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/ghost2.pat}">timidity/sfx/ghost2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/heartbt.pat}">timidity/sfx/heartbt.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/hoofs.pat}">timidity/sfx/hoofs.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/laugh.pat}">timidity/sfx/laugh.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/machgun1.pat}">timidity/sfx/machgun1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/machgun2.pat}">timidity/sfx/machgun2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/meow.pat}">timidity/sfx/meow.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/newwind.pat}">timidity/sfx/newwind.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/punch.pat}">timidity/sfx/punch.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/rain1.pat}">timidity/sfx/rain1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/scratch1.pat}">timidity/sfx/scratch1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/scratch2.pat}">timidity/sfx/scratch2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/scream.pat}">timidity/sfx/scream.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/siren1.pat}">timidity/sfx/siren1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/siren2.pat}">timidity/sfx/siren2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/starship.pat}">timidity/sfx/starship.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/stream.pat}">timidity/sfx/stream.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/stream1.pat}">timidity/sfx/stream1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/telephon.pat}">timidity/sfx/telephon.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/thunder1.pat}">timidity/sfx/thunder1.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/thunder2.pat}">timidity/sfx/thunder2.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/train.pat}">timidity/sfx/train.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/whales.pat}">timidity/sfx/whales.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/sfx/windchim.pat}">timidity/sfx/windchim.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/wime/wimebd.pat}">timidity/wime/wimebd.pat</asset>
+   <asset path="${workspace_loc:openttd/timidity/wime/wimesd.pat}">timidity/wime/wimesd.pat</asset>
+
+
+   <!--  The icon for the application, which should be 86x86. -->
+
+   <icon>
+      <image>icon.png</image>
+   </icon>
+
+   <!--  The splash screen that will appear when your application is launching. Should be 1024x600. -->
+
+   <splashscreen>splashscreen.png</splashscreen>
+
+   <!-- Request permission to execute native code.  Required for native applications. -->
+
+   <permission system="true">run_native</permission>
+   <action>play_audio</action>
+
+   <!--  The permissions requested by your application. -->
+   <!--  <permission>access_shared</permission> -->
+   <!--  <permission>record_audio</permission> -->
+   <!--  <permission>read_geolocation</permission> -->
+   <!--  <permission>use_camera</permission> -->
+   <!--  <permission>access_internet</permission> -->
+   <!--  <permission>play_audio</permission> -->
+   <!--  <permission>post_notification</permission> -->
+   <!--  <permission>set_audio_volume</permission> -->
+   <!--  <permission>read_device_identifying_information</permission> -->
+
+   <configuration id="com.qnx.qcc.configuration.exe.debug.400879774" name="Simulator">
+      <asset path="Simulator/openttd" entry="true" type="Qnx/Elf">openttd</asset>
+   </configuration>
+   <configuration id="com.qnx.qcc.configuration.exe.release.151817137" name="Device-Release">
+      <asset path="${workspace_loc:SDL12/Device-Release/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+      <asset path="${workspace_loc:emulate/Device-Release/libemulate.so}" type="Qnx/Elf">lib/libemulate.so</asset>
+      <asset path="Device-Release/openttd" entry="true" type="Qnx/Elf">openttd</asset>
+   </configuration>
+
+   <configuration id="com.qnx.qcc.configuration.exe.debug.792443695" name="Device-Debug">
+      <asset path="${workspace_loc:SDL12/Device-Debug/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+      <asset path="${workspace_loc:emulate/Device-Debug/libemulate.so}" type="Qnx/Elf">lib/libemulate.so</asset>
+      <asset entry="true" path="${workspace_loc:openttd/Device-Debug/openttd}">openttd</asset>
+   </configuration>
+</qnx>
