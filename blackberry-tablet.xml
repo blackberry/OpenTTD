@@ -57,6 +57,7 @@
 
    <category>core.games</category>
    <asset path="icon.png">icon.png</asset>
+   <asset path="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib/libbps.so" type="Qnx/Elf">lib/libbps.so.1</asset>
    <asset path="${workspace_loc:openttd/splashscreen.png}">splashscreen.png</asset>
    <asset path="${workspace_loc:openttd/ai/compat_0.7.nut}">ai/compat_0.7.nut</asset>
    <asset path="${workspace_loc:openttd/ai/compat_1.0.nut}">ai/compat_1.0.nut</asset>
@@ -496,7 +497,7 @@
 
    <!-- Request permission to execute native code.  Required for native applications. -->
 
-   <permission system="true">run_native</permission>
+   <action system="true">run_native</action>
    <action>play_audio</action>
 
    <!--  The permissions requested by your application. -->
@@ -511,17 +512,22 @@
    <!--  <permission>read_device_identifying_information</permission> -->
 
    <configuration id="com.qnx.qcc.configuration.exe.debug.400879774" name="Simulator">
+      <platformArchitecture>x86</platformArchitecture>
+      <asset path="${workspace_loc:SDL12/Simulator/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Simulator/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
       <asset path="Simulator/openttd" entry="true" type="Qnx/Elf">openttd</asset>
    </configuration>
    <configuration id="com.qnx.qcc.configuration.exe.release.151817137" name="Device-Release">
+      <platformArchitecture>armle-v7</platformArchitecture>
       <asset path="${workspace_loc:SDL12/Device-Release/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
-      <asset path="${workspace_loc:emulate/Device-Release/libemulate.so}" type="Qnx/Elf">lib/libemulate.so</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Device-Release/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
       <asset path="Device-Release/openttd" entry="true" type="Qnx/Elf">openttd</asset>
    </configuration>
 
    <configuration id="com.qnx.qcc.configuration.exe.debug.792443695" name="Device-Debug">
+      <platformArchitecture>armle-v7</platformArchitecture>
       <asset path="${workspace_loc:SDL12/Device-Debug/libSDL12.so}" type="Qnx/Elf">lib/libSDL12.so</asset>
-      <asset path="${workspace_loc:emulate/Device-Debug/libemulate.so}" type="Qnx/Elf">lib/libemulate.so</asset>
-      <asset entry="true" path="${workspace_loc:openttd/Device-Debug/openttd}">openttd</asset>
+      <asset path="${workspace_loc:/TouchControlOverlay/Device-Debug/libTouchControlOverlay.so}" type="Qnx/Elf">lib/libTouchControlOverlay.so</asset>
+      <asset path="Device-Debug/openttd" entry="true" type="Qnx/Elf">openttd</asset>
    </configuration>
 </qnx>
