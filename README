@@ -1,0 +1,18 @@
+Build Instructions
+1. Gather dependencies
+   You will require a number of other libraries in order to build OpenTTD. Each dependency is located in a separate repository. The list is as follows:
+    - lzma
+    - SDL (1.2)
+    - TiMidity
+    - TouchControlOverlay
+
+   Checkout all of the repositories and import the projects into a workspace in the NDK. 
+
+2. Build project
+   First you should choose a build configuration (Device-Debug, Device-Release, or Simulator) and make sure all the projects have that build configuration selected. Then select the openttd project and build it.
+
+3. Run
+   Create a new run configuration for openttd. You will need to specify runtime arguments otherwise the game will likely not display correctly. The required arguments are:
+   -b 32bpp-optimized -r 1024x600
+
+   This will choose the 32bpp optimized tileset and select the correct resolution. Click Run to start the game. Have fun!
