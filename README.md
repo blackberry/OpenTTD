@@ -2,6 +2,7 @@
 
 The _**OpenTTD**_ repository holds the sources for OpenTTD, a cross-platform, open-source simulation game originally based on Transport Tycoon Deluxe, ported to run with the Native SDK for BlackBerry&copy; Tablet OS.
 
+To build from source, you will need to get a few dependencies. Please check out the instructions in the 3rdparty README to make sure you have SDL, lzma and TiMidity.
 
 **Repository Committers** 
 
