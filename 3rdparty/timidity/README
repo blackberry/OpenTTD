@@ -1,0 +1,29 @@
+Build Instructions
+1. Download TiMidity. TiMidity can be downloaded at http://sourceforge.net/projects/libtimidity/files/libtimidity/0.1.0/libtimidity-0.1.0.tar.bz2/download.
+ This will download an archive file. Extract the contents to this directory.
+ There should be a libtimidity-0.1.0 folder already present here.
+2. Open the NDK. Import a project into your workspace from this directory.
+3. There is one minor code change required so that TiMidity can find the patch
+ files to play music. In timidity.c, you need to add the directory 
+ app/native/timidity to the path list, and set the config_file to be 
+ app/native/timidity/timidity.cfg. 
+
+Here's the unified patch.
+
+diff --git a/src/timidity.c b/src/timidity.c
+index 0653e0b..0182c2b 100644
+--- a/src/timidity.c
++++ b/src/timidity.c
+@@ -421,6 +421,9 @@ int mid_init(char *config_file)
+    */
+ #ifdef WIN32
+   add_to_pathlist("\\TIMIDITY");
++#elif defined(__PLAYBOOK__)
++  add_to_pathlist("app/native/timidity");
++  config_file = "app/native/timidity/timidity.cfg";
+ #else
+   add_to_pathlist("/usr/local/lib/timidity");
+   add_to_pathlist("/etc");
+
+If you have any problems, contact jnicholl@rim.com or post on the BlackBerry 
+OpenTTD page for help.

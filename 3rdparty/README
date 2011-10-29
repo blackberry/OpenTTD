@@ -1,0 +1,11 @@
+OpenTTD has a number of dependencies. Unfortunately, no prebuilt binaries have
+been provided at this time so you will have to build them yourself. 
+Here's the list of dependencies:
+
+lzma:     Instructions are provided in the lzma subfolder.
+SDL 1.2:  This is provided on GitHub at https://github.com/blackberry/SDL.
+TiMidity: Instructions are provided in the timidity subfolder.
+TouchControlOverlay: GitHub at https://github.com/blackberry/TouchControlOverlay
+
+OpenTTD also relies on libpng and zlib, but these are already provided in the
+NDK and prebuilt on device.

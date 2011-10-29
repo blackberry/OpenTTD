@@ -1,0 +1,6 @@
+Build Instructions
+1. Download XZ Utils liblzma library at http://tukaani.org/xz/xz-5.0.3.tar.gz. 
+ This will download an archive file. You will only need two folders from the src
+ directory, common and liblzma. Extract them so that src is a subfolder of this 
+ directory.
+2. Open the NDK. Import the project into your workspace from this directory.
